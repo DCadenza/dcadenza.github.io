@@ -10,11 +10,6 @@ body {
 }
 
 /*default*/
-.mini_images {
-    max-width: 12px;
-    height: auto;
-}
-
 .font_gray {
     color: #B0BAC6;
 }
@@ -135,11 +130,6 @@ body {
 
 .id {
     float: right;
-}
-
-.mini_images_stars {
-    max-width: 100px;
-    height: auto;
 }
 
 .about_tour_name {
