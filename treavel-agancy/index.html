@@ -11,13 +11,6 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body>
 
@@ -25,41 +18,49 @@
     <div class="container-fluid">
         <div class="row header-background">
 
-            <div class="col-lg-2 col-md-4 col-sm-3 col-xs-3 logo">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <img src="images/layer6_logo.png" class="logo">
             </div>
 
-            <div class="col-lg-3 col-md-4 col-md-3 col-xs-5 head_nav">
-                    <span class="home_btn"><a href=""> &nbsp&nbsp&nbspHome&nbsp&nbsp&nbsp</a></span>
-                    <span class="about_us_btn"><a href="">&nbsp&nbsp&nbspAbout&nbsp&nbsp&nbsp</a></span>
+            <div class="col-lg-1 col-md-2 col-sm-6 col-xs-6">
+                <span class="home_btn"><a href="">Home&nbsp&nbsp&nbsp</a></span>
+                <span class="about_us_btn"><a href="">About</a></span>
             </div>
 
-            <div class="col-lg-2 col-md-4 col-md-3 col-xs-4 header-content">
-                <span class="header-font phone_font"><img src="images/phone_img.png" class="mini_images"> +62 728 726 62 00<br><img src="images/fax_img.png" class="mini_images"> +62 728 726 62 02</span>
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 header-content">
+                <span class="header-font phone_font">
+                    <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                     +62 728 726 62 00<br>
+                     <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+                     +62 728 726 62 02</span>
             </div>
 
-            <div class="col-lg-2 col-md-4 col-md-3 col-xs-6 header-content">
-                <span class="header-font"><img src="images/mail_img.png" class="mini_images"> <a href="mailto:booking@freetoursbase.com">booking@freetoursbase.com</a><br><img src="images/browser_img.png" class="mini_images"> www.freetoursbase.com</span>
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 header-content">
+                <span class="header-font">
+                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 96/75 , Moo 1. A. Kathu,Phuket, 83120 Thailand</span>   
             </div>
 
-            <div class="col-lg-2 col-md-4 col-md-3 col-xs-6 col-ofset-1 header-content">
-                <span class="header-font"><img src="images/location_img.png" class="mini_images"> 96/75 , Moo 1. A. Kathu,<br>Phuket, 83120 Thailand</span>   
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 header-content header-font">
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                    <a href="mailto:booking@freetoursbase.com">booking@freetoursbase.com</a><br>
+                <span class="glyphicon glyphicon-globe" aria-hidden="true"></span><a href=""> www.freetoursbase.co</a>
             </div>
 
-            <div class="col-lg-1 col-md-4 col-md-3 col-xs-6 col-xs-12 header-content share_btn">
-                <button class="btn btn-default button_style" type="submit"><img src="images/share_img.png" class="mini_images"> Share</button>
+            <div class="col-lg-1 col-md-1 col-sm-6 col-xs-6 header-content share_btn">
+                <button class="btn btn-default button_style" type="submit">
+                    <span class="glyphicon glyphicon-share" aria-hidden="true"></span> Share</button>
             </div>
 
-            <div class="col-lg-1 col-md-4 col-md-3 col-xs-6 header-content lang_btn">
+            <div class="col-lg-1 col-md-1 col-sm-6 col-xs-6 header-content lang_btn">
                 <div class="dropdown">
                   <button class="btn btn-default dropdown-toggle button_style" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    <img src="images/language_img.png" class="mini_images"> English
+                    <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> English
                     <span class="caret"></span>
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">Another Language</a></li>
-                    <li><a href="#">Another Language</a></li>
-                    <li><a href="#">Another Language</a></li>
+                    <li><a href="#">German</a></li>
+                    <li><a href="#">Russian</a></li>
+                    <li><a href="#">English</a></li>
                   </ul>
                 </div>
             </div>
@@ -82,7 +83,7 @@
 
 <!-- DESCRIPTION HEADER CONTAINER -->
                 <div class="col-md-7 header-background block-space">
-                    <h3 class="header_name">Phi Phi Islands + Bamboo Island <img src="images/p.png" class="mini_images"></h3>
+                    <h3 class="header_name">Phi Phi Islands + Bamboo Island <span class="glyphicon glyphicon-home" aria-hidden="true"></span></h3>
 <!-- DESCRIPTION HEADER CONTAINER END -->
 
 <!-- CAROUSEL SLIDER CONTAINER-->
@@ -127,16 +128,16 @@
 
 <!-- ABOUT TOUR CONTAINER -->
                 <div>
-                    <button class="btn btn-default button_style" type="submit"><img src="images/like_img.png" class="mini_images"> Like it</button>
-
-                    <button class="btn btn-default button_style" type="submit"><img src="images/share_black_mini_img.png" class="mini_images"> Share</button>
+                    <button class="btn btn-default button_style" type="submit"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+ Like it</button>
+                    <button class="btn btn-default button_style" type="submit"><span class="glyphicon glyphicon-share" aria-hidden="true"></span> Share</button>
                     <div class="raiting">
                         <p><img src="images/star_r.png" class="mini_images_stars">&nbsp84 reviews</p>
                     </div>
                 </div>
                 <div class="object_location">
-                <p><img src="images/location2_img.png" class="mini_images"> Phuket, <a href="">Thailand</a>
-                <span class="id"><img src="images/id_img.png" class="mini_images">&nbspID: 5895426004</span>
+                <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Phuket, <a href="">Thailand</a>
+                <span class="id"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbspID: 5895426004</span>
                 </p>
                 </div>
 
@@ -216,16 +217,16 @@
 
 <!-- TRIP DAYS AND TIME CONTAINER -->
                 <div class="trip_days_container">
-                    <p><img src="images/calendar_mini_img.png" class="mini_images"> 8 days</p>
-                    <p><span class="font_gray">Start Time: &nbsp</span><img src="images/watch_img.png" class="mini_images"> &nbsp10:00</p>
-                    <p><span class="font_gray">End Time: &nbsp </span><img src="images/watch_end_img.png" class="mini_images"> &nbsp 20:00</p>
+                    <p><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> 8 days</p>
+                    <p><span class="font_gray">Start Time: &nbsp</span><span class="glyphicon glyphicon-time" aria-hidden="true"></span> &nbsp10:00</p>
+                    <p><span class="font_gray">End Time: &nbsp </span><span class="glyphicon glyphicon-repeat" aria-hidden="true"></span> &nbsp 20:00</p>
                 </div>
                 <div class="dashed_line"></div>
 <!-- TRIP DAYS AND TIME CONTAINER END-->
 
 <!-- OPTIONS CONTAINER -->
                 <div class="options_container">
-                    <p class="font_gray">Choose one of the options below <img src="images/down_button.png" class="mini_images"></p>
+                    <p class="font_gray">Choose one of the options below <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></p>
                 </div>
                 <div class="border_img"><p class="border_text">&nbsp&nbspDeluxe</p></div>
 
@@ -274,7 +275,7 @@
 
 <!-- PROMO CODE CONTAINER -->
                 <div class="promo_code_container">
-                <p><img src="images/promo_code_img.png" class="mini_images"> Promo code:</p>
+                <p><span class="glyphicon glyphicon-tags" aria-hidden="true"></span> Promo code:</p>
                 <div class="input-group input_coupon">
                     <input type="text" class="form-control" placeholder="">
                     <span class="input-group-btn">
@@ -299,12 +300,12 @@
         <div class="container-fluid navbar-bottom">
             <div class="row footer">
                 <div class="col-xs-12 col-sm-4">
-                    <small>© Andaman Premium Leisure 2017   |   <a href="">Terms & Conditions</a></small>
+                    <small><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> Andaman Premium Leisure 2017   |   <a href="">Terms & Conditions</a></small>
                 </div>
                 <div class="col-xs-12 col-sm-6">
                     <small>Booking Software for Tours and Activities by <a href="">TourHunter.com</a></small>
                 </div>
-                <div class="col-xs-12 col-sm-2"><small>Agent login</small></div>
+                <div class="col-xs-12 col-sm-2"><small><a href="">Agent login</a></small></div>
             </div>
 
         </div>
@@ -317,6 +318,8 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <!-- SCRIPT END -->
   </body>
 </html>

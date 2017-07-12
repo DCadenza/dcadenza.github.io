@@ -3,6 +3,12 @@ body {
     color: #666666;
 }
 
+@media (max-width: 980px) {
+    body {
+        background-color: white;
+    }
+}
+
 /*default*/
 .mini_images {
     max-width: 12px;
@@ -41,36 +47,28 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-.header-content {
+/*.header-content {
     padding-top: 20px;
-}
+}*/
 
 .logo {
     max-width: 103px;
     height: auto;
-    margin-bottom: 5px;
-}
-
-@media (max-width: 1235px) {
-    .logo {
-        max-width: 70px;
-    }
 }
 
 .header-font {
     color: #666666;
     font-size: 12px;
-    /*margin-top: auto;*/
+    margin-top: auto;
 }
 
 .head_nav {
     padding-top: 20px;
-    padding-left: 50px;
+    padding-left: 30px;
 }
 
 .home_btn {
     font-size: 20px;
-    line-height: 20px;
 }
 
 .home_btn > a {
@@ -83,7 +81,6 @@ body {
 
 .about_us_btn {
     font-size: 20px;
-    line-height: 20px;
 }
 
 .about_us_btn > a {
@@ -172,6 +169,12 @@ body {
 /*OPTIONS CONTAINER*/
 .options_container {
     margin-top: 20px;
+}
+
+@media (max-width: 980px) {
+    .calendar {
+        width: 300px;
+    }
 }
 
 .form {
