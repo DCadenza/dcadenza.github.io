@@ -7,12 +7,6 @@ body {
     font-family: "Open sans", sans-serif;
     font-size: 16px;
 }
-
-/*h1, h2, h3, h4, h5 {
-    font-style: normal;
-
-}*/
-
 /*HEADER BLOCK*/
 .header_background_color {
     background-color: #F0E3D1;
@@ -133,7 +127,7 @@ body {
 .photo {
     max-width: 300px;
     /*border: 1px solid #F0E3D1;*/
-    margin-top: 110px;
+    margin-top: 120px;
     box-shadow: 0px 0px 2px 0px;
 }
 
@@ -151,7 +145,7 @@ body {
     line-height: 30px;
     color: #7e8890;
     padding-top: 110px;
-    padding-bottom: 100px;
+    padding-bottom: 110px;
 }
 
 @media (max-width: 767px){
@@ -228,60 +222,47 @@ body {
 /*PORTFOLIO BLOCK END*/
 
 /*SOCIAL MEDIA BUTTONS*/
-.contact-block h2 {
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 48px;
-    color: #20202c;
-}
-
-.media-buttons {
-    height: 200px;
-}
-
 .socialFooterLinkList {
     height: 23px;
     width: auto;
-    margin-top: 35px;
-    margin-top: 25px;
+    margin-bottom: 25px;
     text-align: center;
 }
 
 .fa {
     padding: 6px;
-    font-size: 60px !important;
-    width: 75px;
+    font-size: 30px !important;
+    width: 45px;
     text-decoration: none;
     border-radius: 50%;
 }
 
 .fa:hover {
     opacity: 0.7;
-    color: black;
+    color: #D2C8BC;
     background: white;
     text-decoration: none;
 }
 
 .fa-facebook {
-    background: gray;
+    background: #AAAAAA;
     color: rgb(241, 244, 248);
 }
 
 .fa-twitter {
-    background: gray;
+    background: #AAAAAA;
     color: rgb(241, 244, 248);
     margin-left: 40px;
 }
 
 .fa-instagram {
-    background: gray;
+    background: #AAAAAA;
     color: rgb(241, 244, 248);
     margin-left: 40px;
 }
 
 .fa-linkedin {
-    background: gray;
+    background: #AAAAAA;
     color: rgb(241, 244, 248);
     margin-left: 40px;
 }
@@ -305,7 +286,7 @@ body {
     }
     .socialFooterLinkList {
         height: 23px;
-        margin-top: 10px;
+        /*margin-top: 10px;*/
     }
 }
 /*SOCIAL MEDIA BUTTONS END*/
@@ -314,5 +295,29 @@ body {
 .footer {
     background-color: #F0E3D1;
     font-size: 12px;
+    /*height: 150px;*/
+}
+.contact-block {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    /*line-height: 30px;*/
+    color: #7e8890;
+}
+
+.contact-block h2 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 48px;
+    color: #20202c;
+}
+
+.share-buttons img {
+    width: 35px;
+    padding: 5px;
+    border: 0;
+    box-shadow: 0;
+    display: inline;
 }
 /*FOOTER END*/
