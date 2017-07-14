@@ -1,18 +1,17 @@
-/*default*/
-/** {
-    margin: 0;
-    padding: 0;
-}*/
-
 img {
     max-width: 100%;
     height: auto;
 }
 
 body {
-    font-family: "Open sans", Arial, sans-serif;
+    font-family: "Open sans", sans-serif;
     font-size: 16px;
 }
+
+/*h1, h2, h3, h4, h5 {
+    font-style: normal;
+
+}*/
 
 /*HEADER BLOCK*/
 .header_background_color {
@@ -30,44 +29,42 @@ body {
 }
 
 .navbar-nav > li {
-    font-family: arial, sans-serif;
-    font-size: 14px;
-    line-height: 20px;
+    font-family: "Brandon Grotesque", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 13px;
     color: #222222;
 }
 
 .big_image_top {
     margin-top: 50px;
-    /*max-width: 100%;*/
     height: 750px;
-    background-image: url(images/3.jpg);
+    background-image: url(../images/3.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    /*background-attachment: fixed;*/
+    background-attachment: fixed;
 }
 /*HEADER BLOCK END*/
 
 /*TOP TEXT BLOCK*/
 .top_text_block {
-    background-color: #F0E3D1;
-    margin-top: 450px;
+    margin-top: 330px;
     margin-bottom: 0px;
     /*opacity: 0.9;*/
-    border: 1px solid gray;
+    /*border: 1px solid gray;*/
+    /*background-color: #F0E3D1;*/
 }
 
 .about_me_block h3 {
-    font-family: 'Merriweather Sans', sans-serif;
-    font-size: 1.5em;
+    font-size: 3em;
     color: black;
     margin-bottom: 0px;
 }
 
 .about_me_block p {
-    font-family: 'Merriweather', serif;
-    font-size: 1em;
-    line-height: 20px;
+    font-size: 2em;
+    line-height: 40px;
     font-weight: 300;
     font-style: normal;
     color: black;
@@ -80,14 +77,12 @@ body {
 }
 
 .about_me_block2 h3 {
-    font-family: 'Merriweather', serif;
     font-size: 1em;
     color: #20202c;
     margin-bottom: 0px;
 }
 
 .about_me_block2 p {
-    font-family: 'Merriweather', serif;
     font-size: 1em;
     line-height: 20px;
     font-weight: 300;
@@ -137,26 +132,33 @@ body {
 /*ABOUT AUTHOR BLOCK*/
 .photo {
     max-width: 300px;
-    border: 2px solid #F0E3D1;
-    margin-top: 150px;
+    /*border: 1px solid #F0E3D1;*/
+    margin-top: 110px;
+    box-shadow: 0px 0px 2px 0px;
+}
+
+.about_author_text h3 {
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 48px;
+    color: #333c4e;
 }
 
 .about_author_text {
-    font-family: "Open Sans", Arial, sans-serif;
-    font-size: 20px;
-    color: #616161;
-    line-height: 43px;
-    text-align: center;
-    padding-top: 100px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 30px;
+    color: #7e8890;
+    padding-top: 110px;
     padding-bottom: 100px;
 }
 
 @media (max-width: 767px){
     .about_author_text {
-        font-size: 1em;
         padding-top: 0px;
         padding-bottom: 0px;
-        line-height: 30px;
+        text-align: center;
     }
     .photo {
         margin-top: 0px;
@@ -164,33 +166,31 @@ body {
 }
 /*ABOUT AUTHOR BLOCK END*/
 
-/*PORTFOLIO BLOCK*/
-.portfolio-header h3 {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.projects_header {
-    font-family: 'Merriweather', serif;
-    font-size: 30px;
-    line-height: 33px;
-}
-
-.projects-content {
-    font-family: 'Merriweather', serif;
-    font-size: 1em;
-}
-
-/*PORTFOLIO BLOCK END*/
-
 /*PROPOSES BLOCK*/
-.proposes-block {
-    font-family: 'Merriweather', serif;
-    font-size: 1em;
+
+.proposes-block h3{
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 48px;
+    color: #333c4e;
+}
+.proposes-block h4{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 48px;
+    color: #333c4e;
+}
+
+.proposes-block p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 200;
+    font-style: normal;
+    color: #7e8890;
 }
 
 .proposal-header {
-    padding-top: 30px;
+    padding-top: 0px;
     padding-bottom: 30px;
 }
 
@@ -206,13 +206,38 @@ body {
 }
 /*PROPOSES BLOCK END*/
 
-/*SOCIAL MEDIA BUTTONS*/
-.media-buttons {
-    height: 200px;
+/*PORTFOLIO BLOCK*/
+.portfolio-header h3 {
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 48px;
+    color: #333c4e;
+    font-style: normal;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.media-header {
-    font-family: 'Merriweather', serif;
+.projects-content h4 {
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 30px;
+    font-style: normal;
+    color: #7e8890;
+}
+
+/*PORTFOLIO BLOCK END*/
+
+/*SOCIAL MEDIA BUTTONS*/
+.contact-block h2 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 48px;
+    color: #20202c;
+}
+
+.media-buttons {
+    height: 200px;
 }
 
 .socialFooterLinkList {
@@ -287,7 +312,6 @@ body {
 
 /*FOOTER*/
 .footer {
-    font-family: 'Merriweather', serif;
     background-color: #F0E3D1;
     font-size: 12px;
 }
