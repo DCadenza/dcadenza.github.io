@@ -23,7 +23,7 @@ body {
 }
 
 .navbar-nav > li {
-    font-family: "Brandon Grotesque", sans-serif;
+    /*font-family: "Brandon Grotesque", sans-serif;*/
     font-size: 13px;
     font-weight: 500;
     line-height: 13px;
@@ -45,9 +45,6 @@ body {
 .top_text_block {
     margin-top: 330px;
     margin-bottom: 0px;
-    /*opacity: 0.9;*/
-    /*border: 1px solid gray;*/
-    /*background-color: #F0E3D1;*/
 }
 
 .about_me_block h3 {
@@ -63,35 +60,8 @@ body {
     font-style: normal;
     color: black;
 }
-
-.top_text_block2 {
-    background-color: #F0E3D1;
-    margin-top: 250px;
-    margin-bottom: 100px;
-}
-
-.about_me_block2 h3 {
-    font-size: 1em;
-    color: #20202c;
-    margin-bottom: 0px;
-}
-
-.about_me_block2 p {
-    font-size: 1em;
-    line-height: 20px;
-    font-weight: 300;
-    font-style: normal;
-    color: #20202c;
-}
 /*TOP TEXT BLOCK END*/
-
 @media (min-width: 767px) {
-    .about_me_block2 {
-        display: none;
-    }
-    .top_text_block2 {
-        display: none;
-    }
     .contact_me_button {
         margin-top: 10px;
     }
@@ -103,7 +73,7 @@ body {
 
 @media (max-width: 767px) {
     .big_image_top {
-        display: none;
+        height: 400px;
     }
     .about_me_block {
         text-align: center;
@@ -113,16 +83,7 @@ body {
         margin-top: inherit;
         margin-bottom: 0px;
     }
-    .about_me_block2 {
-        text-align: center;
-        margin-top: 50px;
-    }
-    .top_text_block2 {
-        margin-top: inherit;
-        margin-bottom: 0px;
-    }
 }
-
 /*ABOUT AUTHOR BLOCK*/
 .photo {
     max-width: 300px;
@@ -295,13 +256,11 @@ body {
 .footer {
     background-color: #F0E3D1;
     font-size: 12px;
-    /*height: 150px;*/
 }
 .contact-block {
     font-style: normal;
     font-weight: 200;
     font-size: 16px;
-    /*line-height: 30px;*/
     color: #7e8890;
 }
 
