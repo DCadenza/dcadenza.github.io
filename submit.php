@@ -1,26 +1,23 @@
 <?php
-if (!empty($_POST['name']) AND !empty($_POST['email']) AND !empty($_POST['message']))
-{
-    $headers = 'From: Кротов Роман\r\n' .
-                'Reply-To: dmitriiholubtsov@gmail.com\r\n' .
-                'X-Mailer: PHP/' . phpversion();
+if (!empty($_POST['name']) AND !empty($_POST['email']) AND !empty($_POST['message'])){
 
-    $theme = "Новое сообщение с сайта";
+  $headers = 'From: Кротов Роман\r\n'.
+             'Reply-To: drugoisvet@gmail.com\r\n'.
+              'X-Mailer: PHP/'. phpversion();
 
-    $letter = "Данные сообщения:";
-    $letter .="\n\n";
-    $letter .="Имя: ".$_POST['name'];
-    $letter .="\nEmail: ".$_POST['email'];
-    $letter .="\nТелефон: ".$_POST['phone'];
-    $letter .="\nСообщение: ".$_POST['message'];
+  $theme = 'Новое сообщение';
 
-    if (mail("dmitriiholubtsov@gmail.com", $theme, $letter, $headers)){
-      header("Location: thankyou.php");
-    } else {
-      header("Location: /");
-    }
+  $letter = 'Данные сообщения:\r\n';
+  $letter .='Имя: '.$_POST['name'].'\r\n';
+  $letter .='Email: '.$_POST['email'].'\r\n';
+  $letter .='Телефон: '.$_POST['phone'].'\r\n';
+  $letter .='Сообщение: '.$_POST['message'].'\r\n';
 
+  if (mail('durgoisvet@gmail.com', $theme, $letter, $headers)){
+    echo "Сообщение отправлено!";
+  } else {
+    echo "Ошибка при отправке!";
+  }
 } else {
-  header("Location: /");
+  echo "Ошибка: Заполните все поля!";
 }
- ?>
