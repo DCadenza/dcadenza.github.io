@@ -16,7 +16,6 @@ src: url("fonts/Oswald/Oswald-Light.ttf");
 src: url("fonts/Oswald/Oswald-SemiBold.ttf");
 src: url("fonts/Oswald/Oswald-Medium.ttf");
 }
-
 /*defaults*/
 .body {
     font-weight: normal;
@@ -434,7 +433,6 @@ p {
 
 .content textarea {
     font-size: 120%;
-    font-family: 'Roboto', sans-serif;
     font-weight: 100;
     margin-bottom: 10px;
     height: 140px;
@@ -524,11 +522,7 @@ p {
     position: relative;
     transition: all 5s ease-in-out;
 }
-@media(max-width: 400px) {
-    .popup {
-        margin: 82px auto;
-    }
-}
+
 .popup .close {
     position: absolute;
     top: 20px;
@@ -553,6 +547,17 @@ p {
     }
     .popup{
         width: 70%;
+    }
+}
+@media(max-width: 400px) {
+    .popup {
+        margin: 82px auto;
+    }
+    .content textarea {
+        height: 100px;
+    }
+    .popup h2 {
+        font-size: 120%;
     }
 }
 /*Top Header menu section end*/
@@ -632,6 +637,10 @@ p {
     }
     .top_header h3 {
     line-height: 48px;
+    font-size: 180%;
+    }
+    .top_header p {
+    font-size: 180%;
     }
 }
 @media(max-width: 376px){
@@ -641,12 +650,7 @@ p {
 }
 @media(max-width: 320px){
     .top_header h3 {
-        font-size: 200%;
-    }
-}
-@media(max-width: 320px) {
-    .top_header p {
-        font-size: 200%;
+        font-size: 150%;
     }
 }
 
