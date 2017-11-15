@@ -5,11 +5,6 @@ $('.mobile-header-nav').slideToggle();
 $(this).toggleClass('open');
 });
 
-// Slider
-$(document).ready(function(){
-$('.owl-carousel').owlCarousel();
-});
-
 // MAP
 function myMap() {
     var mapOptions = {

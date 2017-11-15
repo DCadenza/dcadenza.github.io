@@ -1,3 +1,22 @@
+@font-face {
+font-family: "Roboto";
+src: url("fonts/Roboto/Roboto-Black.ttf");
+src: url("fonts/Roboto/Roboto-Bold.ttf");
+src: url("fonts/Roboto/Roboto-Light.ttf");
+src: url("fonts/Roboto/Roboto-Medium.ttf");
+src: url("fonts/Roboto/Roboto-Regular.ttf");
+src: url("fonts/Roboto/Roboto-Thin.ttf");
+}
+@font-face {
+font-family: "Oswald";
+src: url("fonts/Oswald/Oswald-Regular.ttf");
+src: url("fonts/Oswald/Oswald-Bold.ttf");
+src: url("fonts/Oswald/Oswald-ExtraLight.ttf");
+src: url("fonts/Oswald/Oswald-Light.ttf");
+src: url("fonts/Oswald/Oswald-SemiBold.ttf");
+src: url("fonts/Oswald/Oswald-Medium.ttf");
+}
+
 /*defaults*/
 .body {
     font-weight: normal;
@@ -61,6 +80,31 @@ p {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .7);
 }
 
+@media(max-width: 2000px){
+    .logo {
+        margin-left: 280px;
+    }
+}
+@media(max-width: 1700px){
+    .logo {
+        margin-left: 180px;
+    }
+}
+@media(max-width: 1600px){
+    .logo {
+        margin-left: 150px;
+    }
+}
+@media(max-width: 1470px){
+    .logo {
+        margin-left: 100px;
+    }
+}
+@media(max-width: 1100px){
+    .logo {
+        margin-left: inherit;
+    }
+}
 @media(max-width: 1004px) {
     .logo p {
         font-size: 74%;
@@ -209,7 +253,7 @@ p {
 @media(max-width: 420px) {
     .contact_block {
         width: 140px;
-        margin-top: 14px;
+        margin-top: 18px;
     }
 }
 /*Contact's block end*/
@@ -315,7 +359,7 @@ p {
 .hamburger-menu {
     display: inline-block;
     height: 50px;
-    padding-top: 17px;
+    padding-top: 21px;
     transition: all 0.3s ease-in-out;
 }
 .hamburger-menu :hover {
@@ -332,7 +376,7 @@ p {
 }
 
 .menu-item {
-    margin: 0 0 5px;
+    margin: 0 0 8px;
 }
 
 .open .menu-item:first-child {
@@ -517,7 +561,7 @@ p {
 .bcg_img {
     background: url('../img/header_big_img.png') no-repeat;
     height: 660px;
-    max-width: 1600px;
+    /*max-width: 1600px;*/
     background-position: top center;
     background-size: cover;
 }
@@ -543,6 +587,7 @@ p {
     font-weight: 100;
     line-height: 30pt;
     text-transform: uppercase;
+    line-height: 48px;
 }
 
 .top_header p {
@@ -584,6 +629,9 @@ p {
 @media(max-width: 577px){
     .top_header {
     padding-top: 100px;
+    }
+    .top_header h3 {
+    line-height: 48px;
     }
 }
 @media(max-width: 376px){
@@ -711,6 +759,10 @@ p {
     max-width: 100%;
     padding: 0;
     margin: 0;
+}
+
+.item img {
+    width: 2600px;
 }
 /*Slider end*/
 
@@ -1242,9 +1294,11 @@ p {
 }
 @media(max-width: 460px){
     .footer_section small {
-        font-size: 100%;
-        font-weight: 200;
+        font-size: 70%;
+        font-weight: normal;
         margin-top: 10px;
+        padding-bottom: 10px;
+        float: none;
     }
 }
 /*Footer section end*/
