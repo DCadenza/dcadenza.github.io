@@ -510,6 +510,10 @@ p {
     opacity: 1;
 }
 
+#popup1 {
+    z-index: 99999999;
+}
+
 .popup {
     margin: 149px auto;
     padding-top: 20px;
@@ -657,6 +661,8 @@ p {
 .send_req_btn {
     width: 100%;
     text-align: center;
+    display: block;
+    margin-top: 30px;
 }
 
 .send_req_btn button {
@@ -673,6 +679,11 @@ p {
     background: linear-gradient(to bottom, #4fcce4 0%, #6cd1b5 100%);
 }
 
+.send_req_btn a {
+    text-decoration: none;
+    color: white;
+}
+
 .send_req_btn button a {
     text-decoration: none;
     color: white;
@@ -685,6 +696,9 @@ p {
 
 @media(max-width: 320px){
     .send_req_btn button {
+        margin-top: 32px;
+    }
+    .send_req_btn {
         margin-top: 32px;
     }
 }
