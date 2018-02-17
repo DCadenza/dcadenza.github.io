@@ -142,27 +142,37 @@
                                 <div id="project-canvas">
                                     <div id="project-modules">
                                         <div class="project-module module form project-module-form">
-                                            <form id="form" method="post" action="">
+                                            <form method="POST">
+                                                <!-- Hidden Required Fields -->
+                                                <input type="hidden" name="project_name" value="My site form">
+                                                <input type="hidden" name="admin_email" value="dmitriiholubtsov@gmail.com">
+                                                <input type="hidden" name="form_subject" value="Message from my site">
+                                                <!-- END Hidden Required Fields -->
+
+                                                <input type="text" name="Name" placeholder="You name..." required><br>
+                                        		<input type="text" name="E-mail" placeholder="You E-mail..." required><br>
+                                        		<input type="text" name="Phone" placeholder="You phone..."><br>
+                                        		<button>Send</button>
                                                 <!-- <div class="form-input"> -->
-                                                    <label for="field1">Name *</label>
-                                                    <input type="text" name="name" data-validate="required,Generic" placeholder="Your Name..." required>
+                                                    <!-- <label for="field1">Name *</label>
+                                                    <input type="text" name="name" data-validate="required,Generic" placeholder="Your Name..." required> -->
                                                 <!-- </div> -->
                                                 <!-- <div class="form-input"> -->
-                                                    <label for="field1">Phone *</label>
-                                                    <input type="text" name="phone" data-validate="required,Generic" placeholder="Your Phone..." required>
+                                                    <!-- <label for="field1">Phone *</label>
+                                                    <input type="text" name="phone" data-validate="required,Generic" placeholder="Your Phone..." required> -->
                                                 <!-- </div> -->
                                                 <!-- <div class="form-input"> -->
-                                                    <label for="email">Email Address *</label>
-                                                    <input type="text" name="email" data-validate="required,Email,required" placeholder="Your Email Address.." required>
+                                                    <!-- <label for="email">Email Address *</label>
+                                                    <input type="text" name="email" data-validate="required,Email,required" placeholder="Your Email Address.." required> -->
                                                 <!-- </div> -->
 
                                                 <!-- <div class="form-input"> -->
-                                                    <label for="field2">Text *</label>
-                                                    <textarea name="text" data-validate="required,Generic" placeholder="Your Text..." required></textarea>
+                                                    <!-- <label for="field2">Text *</label>
+                                                    <textarea name="text" data-validate="required,Generic" placeholder="Your Text..." required></textarea> -->
                                                 <!-- </div> -->
 
                                                 <!-- <div class="submit-button"> -->
-                                                    <button>Submit</button>
+                                                    <!-- <button>Submit</button> -->
                                                 <!-- </div> -->
                                             </form>
                                             <div class="contact-form-sent">Thank you!</div>
