@@ -269,81 +269,33 @@ main {
   padding-bottom: 0px;
   padding-top: 0px;
 }
-.project-covers:nth-child(2n+1) {
-  clear: right;
-  margin-left: 0;
+.project-block {
+  float: left;
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 50%;
+  position: relative;
+  overflow: hidden;
 }
 .cover-image img {
-  max-width: 50%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 .cover-image img:hover {
-  background-color: white;
+  background-color: red;
 }
-.cover-content-container {
-  margin: 0%;
-  position: relative;
-}
-/* .cover-image-wrap {
-    overflow: hidden;
-}
-
-.project-cover .cover {
-    left: 0;
-    min-height: 100%;
-    position: absolute;
-}
-
-.project-cover .cover-image {
-    border-radius: 20px;
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    background-color: black;
-}
-
-.project-cover .cover {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;
-    min-height: 100%;
-    width: 100%;
-} */
-.project-cover .details-wrap {
-  background-color: white;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  padding-bottom: 5%;
-  max-width: 100%;
-  padding-top: 5%;
-  width: 90%;
-  height: 100%;
+.wraper-block {
   opacity: 0;
-  position: absolute;
-  top: 0;
-  -webkit-transition: opacity 0.15s ease;
-  -o-transition: opacity 0.15s ease;
-  transition: opacity 0.15s ease;
 }
-/* .details {
-    border-radius: 0px;
-    background: rgba(255, 255, 255, 0.9);
-    height: 100%;
-    position: relative;
-    width: 100%;
-    transition: background 0.2s ease;
-    border-radius: 0px;
-} */
-/* .details-inner {
-    transform: translateY(-50%);
-    top: 50%;
-    left: 0;
-    position: absolute;
-    width: 100%;
-} */
+.wraper-block:hover {
+  width: 50%;
+  display: block;
+  background-color: red;
+  opacity: 1;
+  cursor: pointer;
+}
 .site-footer {
   background: rgba(37, 38, 42, 0.94);
   bottom: 0;
@@ -710,8 +662,11 @@ form {
     font-size: 22px;
     line-height: 32px;
   }
+  nav .gallery-title {
+    padding-top: 20px;
+  }
   nav .gallery-title a {
-    font-size: 22px;
+    font-size: 32px;
     line-height: 32px;
   }
   nav .social i {
@@ -821,6 +776,13 @@ form {
     font-size: 14px;
     line-height: 20px;
   }
+  .page-header .description a {
+    color: black;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+  }
   .project-module-form {
     margin-bottom: 20px;
     margin-top: 20px;
@@ -867,6 +829,22 @@ form {
     padding: 0;
   }
 }
+@media (max-width: 560px) {
+  .content-right {
+    float: none;
+    margin: auto;
+    text-align: center;
+  }
+  .content-right span {
+    padding: 20px;
+    padding-top: 20px;
+  }
+  .content-left {
+    float: none;
+    margin: auto;
+    text-align: center;
+  }
+}
 @media (max-width: 540px) {
   .site-header {
     padding-bottom: 30px;
@@ -878,7 +856,7 @@ form {
     padding-left: 39px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 326px) {
   .logo-text {
     font-size: 16px;
     padding-left: 39px;
