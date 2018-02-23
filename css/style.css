@@ -309,6 +309,10 @@ main {
   color: black;
   cursor: pointer;
 }
+.block-front a {
+  text-decoration: none;
+  color: black;
+}
 .block-front:hover {
   opacity: 1;
   padding-right: 20px;
