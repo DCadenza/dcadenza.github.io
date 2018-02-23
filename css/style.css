@@ -109,6 +109,7 @@ a:hover {
   text-align: center;
 }
 .logo-text2 {
+  font-family: "Helvetica Neue";
   color: #999;
   font-size: 20px;
   font-style: normal;
@@ -159,6 +160,7 @@ nav {
   padding-bottom: 0px;
   padding-top: 0px;
   width: 80%;
+  font-family: "Helvetica Neue";
 }
 nav .group {
   padding-bottom: 30px;
@@ -266,35 +268,64 @@ main {
   float: left;
 }
 .project-covers {
-  padding-bottom: 0px;
-  padding-top: 0px;
-}
-.project-block {
-  float: left;
-  display: block;
-  margin: 0;
   padding: 0;
-  max-width: 50%;
-  position: relative;
-  overflow: hidden;
-}
-.cover-image img {
   margin: 0;
-  padding: 0;
   width: 100%;
 }
-.cover-image img:hover {
-  background-color: red;
-}
-.wraper-block {
-  opacity: 0;
-}
-.wraper-block:hover {
+.block-container {
+  position: relative;
+  margin: 2px;
   width: 50%;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.block-container,
+.block-container div,
+.block-container img {
+  width: 350px;
+  height: 350px;
+}
+.block-container div,
+.block-container img {
+  position: absolute;
+}
+.block-container img {
+  z-index: 1000;
+}
+.space-wraper .block-front {
+  margin: 5%;
+  max-width: 90%;
+  max-height: 90%;
+}
+.block-front {
   display: block;
-  background-color: red;
-  opacity: 1;
+  z-index: 1001;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  opacity: 0;
+  color: black;
   cursor: pointer;
+}
+.block-front:hover {
+  opacity: 1;
+  padding-right: 20px;
+}
+.block-front span {
+  font-family: "Helvetica Neue";
+  display: block;
+  text-align: center;
+  padding-top: 30%;
+  z-index: 1003;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin-right: -20px;
+  float: none;
 }
 .site-footer {
   background: rgba(37, 38, 42, 0.94);
@@ -306,7 +337,7 @@ main {
   left: 0;
   position: fixed;
   width: 100%;
-  z-index: 4;
+  z-index: 99999;
   height: 70px;
   padding-left: 5%;
   padding-right: 5%;
@@ -318,6 +349,11 @@ main {
 }
 .content-left span {
   padding: 20px;
+}
+.content-left span a {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  color: white;
 }
 .footer-content {
   -webkit-transform: translateY(-50%);
@@ -377,6 +413,13 @@ main {
   text-align: center;
   text-transform: none;
   width: 100%;
+}
+.page-header .description a {
+  color: black;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
 }
 .page-content {
   clear: both;
