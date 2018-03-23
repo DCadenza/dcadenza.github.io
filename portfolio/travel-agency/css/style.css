@@ -1,0 +1,271 @@
+body {
+    background-color: rgb(241, 244, 248);
+    color: #666666;
+}
+
+@media (max-width: 980px) {
+    body {
+        background-color: white;
+    }
+}
+
+/*default*/
+.font_gray {
+    color: #B0BAC6;
+}
+
+.font_blue{
+    color: #1988E9;
+}
+
+.button_style {
+    border-radius: 50px;
+}
+
+.solid_line {
+    border-bottom: 1px solid #cccccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dashed_line {
+    border-bottom: 1px dashed #cccccc;
+}
+
+.block-space {
+     margin-bottom: 25px;
+ }
+/*default end*/
+
+/*HEADER CONTAINER*/
+.header-background {
+    background-color: rgb(255, 255, 255);
+}
+
+/*.header-content {
+    padding-top: 20px;
+}*/
+
+.logo {
+    max-width: 103px;
+    height: auto;
+}
+
+.header-font {
+    color: #666666;
+    font-size: 12px;
+    margin-top: auto;
+}
+
+.head_nav {
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.home_btn {
+    font-size: 20px;
+}
+
+.home_btn > a {
+    color: #999999;
+}
+
+.home_btn > a:hover {
+    color: #53A6EF;
+}
+
+.about_us_btn {
+    font-size: 20px;
+}
+
+.about_us_btn > a {
+    color: #999999;
+}
+
+.about_us_btn > a:hover {
+    color: #53A6EF;
+}
+
+.share_btn {
+    margin-bottom: 10px;
+}
+
+.lang_btn {
+    margin-bottom: 10px;
+    padding-right: 2px;
+}
+/*HEADER CONTAINER END*/
+
+/*NAVIGATION MENU CONTAINER*/
+.menu {
+    margin-top: 25px;
+}
+/*NAVIGATION MENU CONTAINER END*/
+
+/*DESCRIPTION HEADER CONTAINER*/
+.header_name {
+    font-size: 18px;
+}
+/*DESCRIPTION HEADER CONTAINER END*/
+
+/*CAROUSEL SLIDER CONTAINER*/
+.carousel {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+/*CAROUSEL SLIDER CONTAINER END*/
+
+/*ABOUT TOUR CONTAINER*/
+.object_location {
+    margin-top: 5px;
+}
+
+.raiting {
+    float: right;
+}
+
+.raiting {
+    color: #47B6F8;
+}
+
+.id {
+    float: right;
+}
+
+.about_tour_name {
+    margin-top: 40px;
+}
+
+.about_tour_text {
+    margin-top: 15px;
+}
+/*ABOUT TOUR CONTAINER END*/
+
+/*CALENDAR CONTAINER*/
+.calendar_container {
+    max-width: 100%;
+}
+
+.calendar {
+    margin-top: 15px;
+    max-width: inherit;
+    height: auto;
+}
+/*CALENDAR CONTAINER END*/
+
+/*TRIP DAYS AND TIME CONTAINER*/
+.trip_days_container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*TRIP DAYS AND TIME CONTAINER END*/
+
+/*OPTIONS CONTAINER*/
+.options_container {
+    margin-top: 20px;
+}
+
+@media (max-width: 980px) {
+    .calendar {
+        width: 300px;
+    }
+}
+
+.form {
+    max-width: 80px;
+    display: inline-block;
+}
+
+.form_text {
+    display: inline-block;
+}
+
+.border_img {
+    width: auto;
+    height: 40px;
+    background-color: #1988E9;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.border_text {
+    color: white;
+    font-size: 1.2em;
+    padding-top: 7px;
+    padding-bottom: 2px;
+}
+
+.border_img_vip {
+    width: auto;
+    height: 40px;
+    background-color: #28A6F0;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*OPTIONS CONTAINER END*/
+
+/*TRIP COST CONTAINER*/
+.price {
+    color: #B0BAC6;
+    margin-top: 25px;
+    text-decoration: line-through;
+}
+
+.price_description {
+    font-size: 10px;
+    color: #B0BAC6;
+}
+
+.cash_id {
+    color: #B0BAC6;
+    font-size: 15px;
+}
+
+.discount_img {
+    max-width: 30px;
+    height: auto;
+}
+
+.discount_price {
+    font-size: 21px;
+}
+
+.book_now_btn {
+    background-color: #1988E9;
+    border-radius: 30px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+/*TRIP COST CONTAINER END*/
+
+/*PROMO CODE CONTAINER*/
+.promo_code_container {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.input_coupon {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+/*PROMO CODE CONTAINER END*/
+
+/*MAP CONTAINER*/
+.map {
+    max-width: 100%;
+}
+
+.map_img {
+    max-width: inherit;
+    height: auto;
+}
+/*MAP CONTAINER END*/
+
+/*FOOTER*/
+.footer {
+    background-color: rgb(255, 255, 255);
+}
+/*FOOTER END*/
