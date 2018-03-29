@@ -252,6 +252,11 @@ body {
 }
 /*SOCIAL MEDIA BUTTONS END*/
 
+.form {
+    text-align: center;
+    margin: 30px;
+    float: left;
+}
 /*FOOTER*/
 .footer {
     background-color: #F0E3D1;
