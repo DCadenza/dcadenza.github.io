@@ -786,7 +786,6 @@ p {
 
 /*Portfolio gallery section*/
 .portfolio_section {
-    min-height: 860px;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -816,14 +815,35 @@ p {
     padding-bottom: 70px;
 }
 
+.portfolio h2 {
+    line-height: inherit;
+}
+
 .portfolio_block {
     padding: 0;
     margin: 0;
+    width: 25%;
 }
 
-.portfolio_block img {
-    max-width: 100%;
-    height: 325px;
+@media(max-width: 1200px) {
+    .portfolio_block {
+        padding: 0;
+        margin: 0;
+        width: 50%;
+    }
+}
+
+@media(max-width: 670px) {
+    .portfolio_block {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.portfolioImage img {
+    width: 100%;
+    height: auto;
 }
 
 .portfolio_block_wraper_descr {
