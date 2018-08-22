@@ -12,8 +12,6 @@ body {
   background-color: #fff;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   line-height: 1.7em;
 }
 body html {
@@ -22,7 +20,6 @@ body html {
   padding: 0;
 }
 html {
-  -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-family: sans-serif;
 }
@@ -52,17 +49,6 @@ a:focus,
 a:hover {
   outline: 0;
 }
-.site-wrap,
-.site-container {
-  position: relative;
-  width: 100%;
-}
-.site-container {
-  float: none;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1400px;
-}
 .header {
   background: url('../images/header.jpg');
   background-repeat: no-repeat;
@@ -75,8 +61,8 @@ a:hover {
   padding-bottom: 200px;
 }
 .header-container__text {
-  width: 89%!important;
-  max-width: 89%!important;
+  width: 89%;
+  max-width: 89%;
   margin: auto;
 }
 .header-container__text h1 {
@@ -93,7 +79,7 @@ a:hover {
 }
 .header-container__text h2 {
   font-family: Helvetica, Arial, Lucida, sans-serif;
-  color: #00c1ca!important;
+  color: #00c1ca;
   font-size: 28px;
   padding-bottom: 1em;
   font-weight: 900;
@@ -101,7 +87,7 @@ a:hover {
 }
 .header-container__text h3 {
   font-family: Helvetica, Arial, Lucida, sans-serif;
-  font-weight: 600!important;
+  font-weight: 600;
   text-transform: uppercase;
   font-size: 16px;
   color: rgba(37, 53, 66, 0.4);
@@ -117,14 +103,14 @@ a:hover {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, #253542 100%), url('../images/header.jpg');
   }
   .header-container__text h3 {
-    color: #6aabd1!important;
+    color: #6aabd1;
   }
   .header-container__text h1 {
-    font-size: 32px!important;
-    color: #ffffff!important;
+    font-size: 32px;
+    color: #ffffff;
   }
   .header-container__text h2 {
-    padding-bottom: 10px!important;
+    padding-bottom: 10px;
   }
 }
 .main {
@@ -160,8 +146,8 @@ a:hover {
   content: ".";
 }
 .main-card-container {
-  width: 94%!important;
-  max-width: 94%!important;
+  width: 94%;
+  max-width: 94%;
   padding: 27px 0;
   position: relative;
   margin: auto;
@@ -177,7 +163,7 @@ a:hover {
   content: ".";
 }
 .card-wrapper {
-  margin-bottom: 0!important;
+  margin-bottom: 0;
   margin-right: 3%;
   width: 31.333%;
   float: left;
@@ -188,7 +174,7 @@ a:hover {
           background-size: cover;
 }
 .card-wrapper:last-child {
-  margin-right: 0!important;
+  margin-right: 0;
 }
 .card-content {
   position: relative;
@@ -200,7 +186,7 @@ a:hover {
   display: inline-block;
   max-width: 100%;
   line-height: 0;
-  margin-bottom: 0!important;
+  margin-bottom: 0;
   background-color: #00c1ca;
   -webkit-border-radius: 100px;
           border-radius: 100px;
@@ -208,7 +194,7 @@ a:hover {
   font-size: 35px;
   position: relative;
   z-index: 1;
-  color: #dc1d49!important;
+  color: #b8f4f7;
 }
 .card-content__img::after {
   content: '';
@@ -231,7 +217,8 @@ a:hover {
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
-  -webkit-box-shadow: 7px 20px 10px rgba(0, 0, 0, 0.18) !important;
+  -webkit-box-shadow: 7px 20px 10px rgba(0, 0, 0, 0.18);
+          box-shadow: 7px 20px 10px rgba(0, 0, 0, 0.18);
 }
 .card-content__text h3 {
   font-family: 'Nunito Sans', Helvetica, Arial, Lucida, sans-serif;
@@ -252,7 +239,7 @@ a:hover {
   .card-wrapper {
     margin-bottom: 30px;
     margin-right: 0;
-    width: 100%!important;
+    width: 100%;
     float: none;
     text-align: center;
   }
@@ -282,11 +269,11 @@ a:hover {
   max-width: 600px;
 }
 .info-container__header p {
-  color: #253542!important;
+  color: #253542;
   font-family: Helvetica, Arial, Lucida, sans-serif;
   font-size: 35px;
   font-weight: 900;
-  margin-bottom: 20px!important;
+  margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 7px;
   line-height: 1.4em;
@@ -343,8 +330,8 @@ a:hover {
 }
 .info-column-content {
   padding-top: 40px;
-  padding-right: 20px!important;
-  padding-left: 20px!important;
+  padding-right: 20px;
+  padding-left: 20px;
   position: relative;
   max-width: 550px;
   margin: 0 auto;
@@ -352,13 +339,13 @@ a:hover {
 }
 .info-column-content h3 {
   font-family: 'Nunito Sans', Helvetica, Arial, Lucida, sans-serif;
-  color: #333333!important;
+  color: #333333;
   font-size: 1.17em;
   font-weight: bold;
 }
 .info-column-content p {
   font-family: 'Nunito Sans', Helvetica, Arial, Lucida, sans-serif;
-  color: #333333!important;
+  color: #333333;
   font-size: 100%;
   font-weight: 200;
 }
@@ -379,21 +366,21 @@ a:hover {
 }
 @media (max-width: 980px) {
   .info-columns {
-    display: block!important;
-    direction: none!important;
+    display: block;
+    direction: none;
   }
   .info-column-wrapper {
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
         -ms-flex-order: 1;
             order: 1;
-    width: 100%!important;
-    margin-right: 0!important;
-    float: none!important;
-    margin-bottom: 30px!important;
+    width: 100%;
+    margin-right: 0;
+    float: none;
+    margin-bottom: 30px;
   }
   .info-column-content {
-    padding-top: 10px!important;
+    padding-top: 10px;
   }
 }
 .footer {
@@ -434,8 +421,8 @@ a:hover {
   z-index: 9;
 }
 .f-description-column__text {
-  margin-left: auto!important;
-  margin-right: auto!important;
+  margin-left: auto;
+  margin-right: auto;
 }
 .f-description-column__text h2 {
   margin-top: 0;
@@ -457,7 +444,7 @@ a:hover {
   font-weight: 200;
 }
 .form {
-  margin-right: 0!important;
+  margin-right: 0;
   width: 64.833%;
   float: left;
   position: relative;
@@ -470,13 +457,13 @@ a:hover {
   position: relative;
   margin-left: -3%;
 }
-.contact_field {
+.contact-field {
   margin-bottom: 3%;
   padding: 0 0 0 3%;
-  color: white!important;
+  color: white;
 }
-.contact_field .input {
-  color: #fff!important;
+.contact-field .input {
+  color: #fff;
   width: 100%;
   font-family: Helvetica, Arial, Lucida, sans-serif;
   font-weight: 900;
@@ -489,9 +476,11 @@ a:hover {
   -webkit-border-radius: 0;
           border-radius: 0;
   -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   clear: both;
 }
-.contact_field .input textarea {
+.contact-field .input textarea {
   text-rendering: auto;
   letter-spacing: normal;
   word-spacing: normal;
@@ -499,9 +488,10 @@ a:hover {
   text-indent: 0px;
   text-shadow: none;
   text-align: start;
-  font: 400 11px system-ui;
+  font-weight: 400;
+  font-size: 11px;
 }
-.contact_field .input_message {
+.contact-field .input-message {
   min-height: 150px;
   width: 100%;
   font-family: Helvetica, Arial, Lucida, sans-serif;
@@ -515,34 +505,30 @@ a:hover {
   -webkit-border-radius: 0;
           border-radius: 0;
   -webkit-appearance: none;
-  color: white!important;
+     -moz-appearance: none;
+          appearance: none;
+  color: white;
   clear: both;
 }
-.form-btn_container {
+.form-btn__container {
   float: right;
   margin-top: -1.5%;
   text-align: right;
 }
-.form-btn_container button {
-  color: #ffffff!important;
+.form-btn__container button {
+  color: #ffffff;
   background: #00c7cd;
-  border-width: 3px!important;
-  border-color: #00c7cd;
-  -webkit-border-radius: 0px;
-          border-radius: 0px;
   letter-spacing: 3px;
   font-size: 16px;
   font-family: 'Nunito Sans', Helvetica, Arial, Lucida, sans-serif;
-  font-weight: 800!important;
-  text-transform: uppercase!important;
-  background-color: #00c7cd;
+  font-weight: bold;
   cursor: pointer;
-  padding: 0.3em 1em!important;
-  position: relative;
-  line-height: 1.7em!important;
+  padding: 0.3em 1em;
+  line-height: 1.7em;
   outline: none;
+  border: none;
 }
-.form-btn_container::after {
+.form-btn__container::after {
   display: block;
   visibility: hidden;
   clear: both;
@@ -556,16 +542,16 @@ a:hover {
     padding-bottom: 20px;
   }
   .f-description-column__text p {
-    padding-bottom: 25px!important;
+    padding-bottom: 25px;
   }
   .f-description-column {
-    width: 100%!important;
-    margin-right: 0!important;
-    float: none!important;
+    width: 100%;
+    margin-right: 0;
+    float: none;
   }
   .form {
-    margin-right: 0!important;
-    width: 100%!important;
-    float: none!important;
+    margin-right: 0;
+    width: 100%;
+    float: none;
   }
 }
