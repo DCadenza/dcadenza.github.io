@@ -148,7 +148,7 @@ input[type=submit], button {
     color: black;
 }
 .leftBar .accessories:hover ul {
-    display: block
+    display: block;
 }
 .leftBar .abCompanyBlock {
     background-color: #2a2822;
@@ -262,7 +262,7 @@ input[type=submit], button {
     text-align: center;
     height: auto;
     width: 100%;
-    margin: auto;;
+    margin: auto;
 }
 .grandSpan {
     font-size: 80px;
@@ -558,7 +558,6 @@ footer .bottomFooter .sotials a i {
     .leftBar {
         display: none;
     }
-
     .page {
         margin-top: 190px;
     }
@@ -573,8 +572,6 @@ footer .bottomFooter .sotials a i {
     .btnMore {
         font-family: "Regular";
     }
-
-
     .mobHeader {
         display: block;
         z-index: 1000;
@@ -615,7 +612,7 @@ footer .bottomFooter .sotials a i {
         margin: auto;
     }
     .mobHeader .orangeBlock .phoneCall img {
-        vertical-align: middle
+        vertical-align: middle;
     }
     .mobHeader .orangeBlock .callBack {
         width: 41%;
@@ -628,12 +625,9 @@ footer .bottomFooter .sotials a i {
         display: inline-block;
         float: right;
     }
-
     .contBlock {
         margin: 0;
     }
-
-
     .discounts {
         height: auto;
     }
@@ -651,7 +645,6 @@ footer .bottomFooter .sotials a i {
     .discounts.accessories ul li {
         display: inline-table;
     }
-
     .consultation {
         height: auto;
     }
@@ -678,11 +671,9 @@ footer .bottomFooter .sotials a i {
         font-size: 24px;
         padding: 16px;
     }
-
     .accessoriesText {
         font-size: 25px;
     }
-
     footer .sideBlock {
         padding: 20px 50px;
     }
@@ -762,7 +753,6 @@ footer .bottomFooter .sotials a i {
     .mobHeader .blackBlock img {
         height: 35px;
     }
-
     .mobHeader .orangeBlock {
         padding: 10px 20px;
     }
@@ -770,10 +760,8 @@ footer .bottomFooter .sotials a i {
         font-size: 20px;
     }
     .mobHeader .orangeBlock .callBack span {
-        font-size: 13px
+        font-size: 13px;
     }
-
-
     .slideCont {
         height: 750px;
     }
@@ -786,15 +774,9 @@ footer .bottomFooter .sotials a i {
     .phoneForSlide {
         display: none;
     }
-
-
-
     .consultation .consForm span {
         font-size: 25px;
     }
-
-
-
     footer .bottomFooter .sotials {
         display: none;
     }
