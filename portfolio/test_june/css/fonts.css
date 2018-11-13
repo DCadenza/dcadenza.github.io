@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Regular";
+    src: url("../fonts/ProximaNova-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Black";
+    src: url("../fonts/ProximaNova-Black.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Bold";
+    src: url("../fonts/ProximaNova-Bold.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "ExtraBld";
+    src: url("../fonts/ProximaNova-Extrabld.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Light";
+    src: url("../fonts/ProximaNova-Light.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Semibold";
+    src: url("../fonts/ProximaNova-Semibold.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Thin";
+    src: url("../fonts/ProximaNovaT-Thin.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
