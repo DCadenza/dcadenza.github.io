@@ -89,11 +89,12 @@ input[type=submit], button {
     color: #f5821f;
 }
 
-aside {
+aside.leftContent {
     min-height: 100%;
     position: relative;
     width: 361px;
     float: left;
+    position: fixed;
     z-index: 1000;
 }
 .leftBar {
