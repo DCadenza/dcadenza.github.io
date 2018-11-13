@@ -1,6 +1,10 @@
 body {
     margin: 0;
     font-family: "Regular";
+    height: 100%
+}
+html {
+    height: 100%;
 }
 * {
     box-sizing: border-box;
@@ -22,7 +26,6 @@ input[type=submit], button {
 .clearBoth {
     clear: both;
 }
-
 
 .languageBlock {
     position: absolute;
@@ -56,7 +59,7 @@ input[type=submit], button {
 .leftBar > div {
     text-align: center;
 }
-.leftBar li{
+.leftBar li {
     list-style: none;
 }
 .leftBar img {
@@ -320,7 +323,7 @@ input[type=submit], button {
 }
 .discounts ul {
     padding: 0;
-    display: flex; 
+    display: flex;
 }
 .discounts ul li {
     padding-top: 10px;
@@ -766,7 +769,7 @@ footer .bottomFooter .sotials a i {
         font-size: 13px
     }
 
-    
+
     .slideCont {
         height: 750px;
     }
