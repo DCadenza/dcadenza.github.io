@@ -46,6 +46,10 @@ input[type=submit], button {
     color: #f5821f;
 }
 
+.leftContent {
+    height: 100%;
+    position: relative;
+}
 .leftBar {
     position: fixed;
     height: 100%;
