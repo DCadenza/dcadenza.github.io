@@ -1,24 +1,3 @@
-body {
-    margin: 0;
-    font-family: "Regular";
-}
-* {
-    box-sizing: border-box;
-    outline: unset;
-}
-a {
-    color: #cdcdcd;
-    text-decoration: none;
-    font-size: 14px;
-}
-input:focus::placeholder, textarea:focus::placeholder {
-    color: transparent !important;
-}
-input[type=submit], button {
-    cursor: pointer;
-    background-color: unset;
-    border: unset;
-}
 .clearBoth {
     clear: both;
 }
