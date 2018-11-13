@@ -46,16 +46,17 @@ input[type=submit], button {
     color: #f5821f;
 }
 
-.leftContent {
+aside {
     height: 100%;
     position: relative;
+    width: 361px;
 }
 .leftBar {
     position: fixed;
     height: 100%;
     background-color: rgba(33, 33, 33, 0.9);
     box-sizing: border-box;
-    z-index: 1000;
+    /* z-index: 1000; */
     width: 361px;
     padding: 13px 27px 13px 17px;
     overflow: auto;
