@@ -282,6 +282,7 @@ main {
   position: relative;
   width: 50%;
   float: left;
+  overflow: hidden;
 }
 .image {
   display: block;
