@@ -256,9 +256,15 @@ a {
   font-size: 16px;
   color: #121920;
 }
+@media (max-width: 566px) {
+  .heroContent {
+    margin-top: 15px;
+    margin-bottom: 43px;
+  }
+}
 @media (max-width: 362px) {
   .hero {
-    padding-top: 5px;
+    padding-top: 108px;
     background-color: #fafaf7;
   }
 }
@@ -768,12 +774,30 @@ __form {
     margin-left: -155px;
   }
 }
+@media (max-width: 369px) {
+  .subscribeBtn form button {
+    font-size: 20px;
+  }
+}
+@media (max-width: 322px) {
+  .subscribeBtn form button {
+    font-size: 16px;
+  }
+}
 .cookies {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  margin: 0 auto;
   background-color: #121920;
   height: 80px;
   max-width: 657px;
   -webkit-border-radius: 10px;
           border-radius: 10px;
+  z-index: 10;
 }
 .cookies__content {
   display: -webkit-box;
@@ -831,6 +855,50 @@ __form {
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
+}
+@media (max-width: 510px) {
+  .cookies__content {
+    padding-top: 5px;
+  }
+}
+@media (max-width: 440px) {
+  .cookies__content button {
+    max-width: 118px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 410px) {
+  .cookies__content {
+    padding-top: 10px;
+  }
+  .cookies__content span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .cookies__content button {
+    margin-right: 0px;
+    font-size: 12px;
+  }
+  .cookies__content img {
+    max-width: 22px;
+    height: 22px;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 336px) and (max-width: 400px) {
+  .cookies__content span {
+    font-size: 10px;
+  }
+  .cookies__content button {
+    margin-left: 5px;
+    font-size: 10px;
+  }
+  .cookies__content img {
+    margin-right: 5px;
+  }
 }
 .videoSection {
   background-color: #36c1ba;
@@ -1161,6 +1229,26 @@ __form {
     padding-bottom: 20px;
   }
 }
+@media (max-width: 404px) {
+  .benefits__topTextBlock h3 {
+    margin-top: 47px;
+  }
+  .benefits__items ul li {
+    max-width: 165px;
+    margin-right: 0px;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .benefits__items ul li:last-child {
+    margin-right: 0px;
+  }
+  .benefits__items ul li:first-child {
+    margin-left: 0px;
+  }
+  .benefits__button {
+    margin-bottom: 50px;
+  }
+}
 .testimonial {
   background-color: #f0f6f4;
 }
@@ -1188,31 +1276,65 @@ __form {
 }
 .testimonial__items {
   margin-top: 39px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
 }
-.testimonial__items .start-video {
+.testimonial__items .item {
+  position: relative;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+.testimonial__items .item .start-video {
   position: absolute;
-  top: 80px;
+  top: 0;
   padding: 12px;
-  left: 174px;
-  opacity: .3;
+  left: 210px;
   cursor: pointer;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.testimonial__items .start-video:hover {
-  opacity: 1;
-  -webkit-filter: brightness 1;
-}
-.testimonial__items div.thumbnail_container {
+.testimonial__items .item div.thumbnail_container {
   max-width: 263px;
   height: 263px;
   overflow: hidden;
   background-color: #000;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
 }
-.testimonial__items img.thumbnail {
-  margin-top: -50px;
-  opacity: 0.5;
+.testimonial__items .item .shadow {
+  background-color: #000;
+}
+.testimonial__items .item img.thumbnail {
+  opacity: 0.9;
+}
+.testimonial__items .item p.thumbnail {
+  position: absolute;
+  color: white;
+  z-index: 1000;
+  top: 100px;
+}
+@media (max-width: 462px) {
+  .testimonial__content {
+    padding-bottom: 50px;
+  }
+  .testimonial__topTextBlock h3 {
+    padding-top: 47px;
+  }
 }
 .video-item {
   max-width: 652px;
@@ -1324,6 +1446,42 @@ __form {
 @media (max-width: 1137px) {
   .ingredients__items ul li p {
     padding-bottom: 20px;
+  }
+}
+@media (max-width: 462px) {
+  .ingredients__content {
+    margin-bottom: 45px;
+  }
+  .ingredients__topTextBlock {
+    text-align: center;
+  }
+  .ingredients__topTextBlock h3 {
+    margin-top: 47px;
+  }
+  .ingredients__items ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .ingredients__items ul li {
+    max-width: 194px;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 }
 .facts {
@@ -1526,6 +1684,12 @@ __form {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .facts__topTextBlock {
+    margin-bottom: 20px;
+  }
+  .facts__topTextBlock h3 {
+    font-size: 50px;
+  }
   .factsItem__left {
     text-align: justify;
     margin-right: 0px;
@@ -1633,6 +1797,7 @@ __form {
     text-align: center;
     display: block;
     margin-right: 0px;
+    margin-left: 0px;
   }
 }
 .chart {
@@ -2171,13 +2336,13 @@ table tr:last-child td {
     background: #121920;
   }
   .footer__content {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .footer .contactUs {
-    text-align: center;
+    text-align: left;
   }
 }
 @media (max-width: 497px) {

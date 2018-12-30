@@ -90,8 +90,22 @@ chbox2=document.getElementById('checkboxSubscribe');
 	}
 };
 
-// Video video popUp
+//Hide subscribe info block on click
+$('.subscribeInfo').on('click', function(){
+    $('.subscribeInfo').hide('2000');
+});
 
+// Show cookies message on Click
+$(document).ready(function() {
+    $(".cookies").delay(1000).fadeIn(500);
+});
+
+// Hide cookies message on Click
+$('#cookiesBtn').on('click', function(){
+    $('.cookies').fadeOut('2000');
+});
+
+// Video video popUp
 jQuery(function($){
 
 // Lightbox Triggers
@@ -99,7 +113,6 @@ jQuery(function($){
 });
 
 //Function to create lightbox
-
 jQuery.fn.extend({
     videoBox : function() {
         var self, link, target, video, videoSrc, toggle;
@@ -135,7 +148,6 @@ jQuery.fn.extend({
 });
 
 // Resize iframe video function
-
 function resizeIfame(frame) {
 
     var oldWidth = $(frame).width();
@@ -166,8 +178,8 @@ var player;
 
 onYouTubeIframeAPIReady = function () {
     player = new YT.Player('player', {
-        height: '244',
-        width: '434',
+        height: '263',
+        width: '263',
         videoId: 'AkyQgpqRyBY',  // youtube video id
         playerVars: {
             'autoplay': 0,
@@ -200,7 +212,6 @@ $(document).on('click', '.start-video', function () {
 });
 
 // Function to change table button color on Click
-
 $('#colorBtn1, #colorBtn2, #colorBtn3').click(function () {
     if (this.id == 'colorBtn1') {
         $('#colorBtn1').css('color', '#36c1ba');
@@ -227,7 +238,6 @@ $('#colorBtn1, #colorBtn2, #colorBtn3').click(function () {
 });
 
 // Function to change table content
-
 var HIDDEN_CLASS_NAME = 'hidden'
 var TARGET_CLASS_NAME = 'table'
 var SOURCE_CLASS_NAME = 'titleBtn'
