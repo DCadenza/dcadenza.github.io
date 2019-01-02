@@ -258,8 +258,10 @@ document.querySelector(".video-overlay-2").onclick = function(){
 	this.style.display = "none";
 }
 // video-overlay-3
+// Video disabled. To Enable video, change "block" to "none".
+// And uncoment iframe block in index.html, section testimonial
 document.querySelector(".video-overlay-3").onclick = function(){
-	this.style.display = "none";
+	this.style.display = "block";
 }
 // video-overlay-4
 document.querySelector(".video-overlay-4").onclick = function(){
