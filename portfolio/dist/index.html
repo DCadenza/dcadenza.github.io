@@ -89,7 +89,7 @@
                         <div class="checkbox-oneTime">
 
                             <label class="check">
-                                <input type="checkbox"/ id="checkboxOneTime" onchange="fun1()">
+                                <input type="checkbox" id="checkboxOneTime" onchange="fun1()">
                                 <div class="box">
                                     <div class="before"></div>
                                 </div>
@@ -110,7 +110,7 @@
                             </div>
 
                             <label class="subscribe">
-                                <input type="checkbox"/ id="checkboxSubscribe" checked  onchange="fun2()">
+                                <input type="checkbox" id="checkboxSubscribe" checked  onchange="fun2()">
                                 <div class="boxSubscribe">
                                     <div class="subscribeBefore"></div>
                                 </div>
@@ -143,7 +143,7 @@
                         </div>
                         <div class="subscribeBtn">
                             <form onsubmit="return false">
-                              <button id="subBtn"type="Submit" value="Submit" onclick="getValue()">Subscribe</button>
+                              <button id="subBtn" type="Submit" value="Submit" onclick="getValue()">Subscribe</button>
                             </form>
                         </div>
                     </div>
@@ -183,8 +183,8 @@
                       <figure>
 
                         <a href="#post-popup1" class="open-video-link">
-                            <img class="play-button"src="images/play_video.png" alt="Play Video Button">
-                            <img class="video-cover"src="images/video_cover.png">
+                            <img class="play-button" src="images/play_video.png" alt="Play Video Button">
+                            <img class="video-cover" src="images/video_cover.png" alt="Video cover">
                         </a>
 
                       </figure>
@@ -194,7 +194,7 @@
                         <span class="close"></span>
                         <div class="popup-header"></div>
                         <div class="popup-video">
-                            <iframe max-width="560" height="auto" src="https://www.youtube.com/embed/E1DmGfXO2Tk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="auto" src="https://www.youtube.com/embed/E1DmGfXO2Tk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -261,18 +261,63 @@
                     <img src="images/underline_black.png" alt="Underline black">
                     <p>Simpleat is made to provide the perfectly balanced diet with every nutrient your body needs for optimal health.</p>
                 </div>
-
+<!-- Change iframe video here -->
                 <div class="testimonial__items">
-                    <div class="item">
-                        <div id="player"></div>
-                        <div id="thumbnail_container" class="thumbnail_container">
-                            <div class="shadow">
-                            <img class="thumbnail" id="thumbnail" />
-                            <p>Hello</p>
-                            </div>
 
+                    <div class="item-1">
+                        <div class="video-wrapper">
+                            <div class="video-overlay-1">
+                                <div class="layer"></div>
+                                <img src="images/testimonial_play_btn.png" alt="Play Video Button">
+                                <div class="video-overlay__text">
+                                <h4>Anna, 25  •  Manager</h4>
+                                <p>Lorem ipsum dolor sit elit,sed do eiusmod elit,sed do eiusmod ipsum</p>
+                            </div>
+                            </div>
+                            <iframe width="263" height="263" src="https://www.youtube.com/embed/E1DmGfXO2Tk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
-                        <a class="start-video"><img width="30" src="images/testimonial_play_btn.png"></a>
+                    </div>
+
+                    <div class="item-2">
+                        <div class="video-wrapper">
+                            <div class="video-overlay-2">
+                                <div class="layer"></div>
+                                <img src="images/testimonial_play_btn.png" alt="Play Video Button">
+                                <div class="video-overlay__text">
+                                <h4>Stiv, 25  •  Manager</h4>
+                                <p>Lorem ipsum dolor sit elit,sed do eiusmod elit,sed do eiusmod ipsum</p>
+                            </div>
+                            </div>
+                            <iframe width="263" height="263" src="https://www.youtube.com/embed/E1DmGfXO2Tk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="item-3">
+                        <div class="video-wrapper">
+                            <div class="video-overlay-3">
+                                <div class="layer"></div>
+                                <img src="images/testimonial_read_btn.png" alt="Read button">
+                                <div class="video-overlay__text">
+                                <h4>Julia, 45  •  Manager </h4>
+                                <p>Lorem ipsum dolor sit elit,sed do eiusmod elit,sed do eiusmod ipsum</p>
+                            </div>
+                            </div>
+                            <iframe width="263" height="263" src="https://www.youtube.com/embed/E1DmGfXO2Tk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="item-4">
+                        <div class="video-wrapper">
+                            <div class="video-overlay-4">
+                                <div class="layer"></div>
+                                <img src="images/testimonial_play_btn.png" alt="Play Video Button">
+                                <div class="video-overlay__text">
+                                    <h4>John, 35  •  Manager </h4>
+                                    <p>Lorem ipsum dolor sit elit,sed do eiusmod elit,sed do eiusmod ipsum</p>
+                                </div>
+                            </div>
+                            <iframe width="263" height="263" src="https://www.youtube.com/embed/E1DmGfXO2Tk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -697,7 +742,7 @@
                 </div>
 <!-- Sign up form -->
                 <div class="joinUs__form">
-                    <form action="">
+                    <form action="POST">
                         <input type="email" name="email" placeholder="Your e-mail">
 <input type="submit" value="Sign up!">
                     </form>
@@ -746,7 +791,7 @@
                         <img src="images/call_us.png" alt="Call us">
                         </div>
                         <div class="call-text">
-                        <a href="tel:+123 456-789-000">+123 456-789-000</a><br>
+                        <a href="tel:+123456789000">+123 456-789-000</a><br>
                         <span>Every day from 8 AM - 8 PM</span>
                         </div>
                     </div>
@@ -763,19 +808,19 @@
                 </div>
                     <div class="langSelect">
                         <ul class="languagepicker roundborders">
-    	                    <a href="#en"><li><img src="images/en.png"/>English</li></a>
-                            <a href="#de"><li><img src="images/en.png"/>Doutch</li></a>
+    	                    <a href="#en"><li><img src="images/en.png" alt="English Language">English</li></a>
+                            <a href="#de"><li><img src="images/en.png" alt="Doutch Language">Doutch</li></a>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </footer>
 
 <!-- End -->
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascropt" src="js/testimonial-videos.js"></script>
 </body>
 
 </html>
