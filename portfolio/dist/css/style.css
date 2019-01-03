@@ -36,6 +36,41 @@ a {
   padding-left: 15px;
   padding-right: 15px;
 }
+#preloader {
+  background: #36c1ba;
+  bottom: 0px;
+  left: 0px;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  z-index: 30;
+}
+#preloader .svg-animation {
+  background: url('../images/spinning-circles.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 58px 58px;
+          background-size: 58px;
+  height: 58px;
+  margin: -16px 0px 0px -16px;
+  position: absolute;
+  width: 58px;
+}
+.container-preloader {
+  color: #ffffff;
+  font-size: 40px;
+  height: 100px;
+  left: 50%;
+  letter-spacing: -2px;
+  line-height: 35px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  max-width: 250px;
+  -webkit-transform: rotate(-50, 50);
+      -ms-transform: rotate(-50, 50);
+          transform: rotate(-50, 50);
+}
 .header {
   background-color: #f0f6f4;
   height: 108px;
@@ -728,7 +763,7 @@ __form {
 }
 @media (max-width: 1216px) {
   .subscribeInfo {
-    margin-top: -150px;
+    margin-top: -140px;
   }
 }
 @media (max-width: 1086px) {
@@ -750,9 +785,15 @@ __form {
     width: 100%;
   }
   .subscribeInfo {
-    margin-top: -120px;
+    margin-top: -140px;
   }
   .subscribe-options {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .checkboxes {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
@@ -761,10 +802,15 @@ __form {
 }
 @media (max-width: 594px) {
   .subscribeInfo {
-    margin-top: -140px;
+    margin-top: -110px;
   }
   .subscribeInfo span {
     padding-right: 10px;
+  }
+}
+@media (max-width: 528px) {
+  .subscribeInfo {
+    margin-top: -136px;
   }
 }
 @media (max-width: 464px) {

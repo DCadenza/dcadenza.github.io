@@ -11,19 +11,24 @@ function up() {
 
 // Show and Hide cookies message on Click
 $(document).ready(function(){
-$("#cookiesBtn").click(function (){
-$.cookie(".cookies", "24house", {expires: 0} );
-$(".cookies").hide();
+    $("#cookiesBtn").click(function (){
+        $.cookie(".cookies", "24hourse", {expires: 0} );
+        $(".cookies").hide();
+    });
+
+    if ( $.cookie(".cookies") == null ) {
+        setTimeout(function(){
+            $(".cookies").show();
+        }, 4000)
+    } else { $(".cookies").hide();}
 });
 
-if ( $.cookie(".cookies") == null )
-{
-setTimeout(function(){
-$(".cookies").show();
-}, 4000)
-}
-else { $(".cookies").hide();
-}
+// Preloader
+$(window).on('load', function () {
+var $preldr = $('#preloader'),
+    $svg_anm   = $preldr.find('.svg-animation');
+$svg_anm.fadeOut();
+$preldr.delay(1000).fadeOut('slow');
 });
 
 // Form
