@@ -561,9 +561,9 @@ __form {
 .subscribe .boxSubscribe:after {
   border-bottom: 2px solid;
   border-color: #ffffff;
-  color: #ffffff;
   border-left: 2px solid;
   bottom: 5px;
+  color: #ffffff;
   content: '';
   height: 15%;
   left: 0px;
@@ -603,7 +603,7 @@ __form {
   display: block;
   margin-left: -5px;
   margin-right: 15px;
-  margin-top: -120px;
+  margin-top: -110px;
   max-width: 277px;
   position: absolute;
 }
@@ -811,7 +811,6 @@ __form {
   -webkit-border-radius: 10px;
           border-radius: 10px;
   bottom: 0px;
-  display: none;
   height: 80px;
   left: 0px;
   margin: 0px auto;
@@ -2283,6 +2282,12 @@ table tr:last-child td {
   margin-left: 20px;
   outline: none;
   width: 221px;
+}
+.joinUs__form form input[type=submit]:hover {
+  background: #36c1ba;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 @media (max-width: 805px) {
   .joinUs__form {

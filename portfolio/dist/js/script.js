@@ -1,4 +1,5 @@
-// Animate slow up effect
+
+// Animate Slow Up effect
 function up() {
     var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
     if(top > 0) {
@@ -7,6 +8,23 @@ function up() {
     } else clearTimeout(t);
     return false;
 };
+
+// Show and Hide cookies message on Click
+$(document).ready(function(){
+$("#cookiesBtn").click(function (){
+$.cookie(".cookies", "24house", {expires: 0} );
+$(".cookies").hide();
+});
+
+if ( $.cookie(".cookies") == null )
+{
+setTimeout(function(){
+$(".cookies").show();
+}, 4000)
+}
+else { $(".cookies").hide();
+}
+});
 
 // Form
 $(".custom-select").each(function() {
@@ -42,6 +60,22 @@ $(".custom-option").on("click", function() {
     $(this).addClass("selection");
     $(this).parents(".custom-select").removeClass("opened");
     $(this).parents(".custom-select").find(".custom-select-trigger").text($(this).text());
+});
+
+// Hide subscribe info block when user open select form
+$(function() {
+    $('.custom-select-trigger').on('click', function(){
+        $('.subscribeInfo').hide('2000');
+        $('.' + $(this).val()).show('2000');
+    });
+});
+
+// Show sibscribe info block when user clicked on selected item.
+$(function() {
+    $('.custom-option, .custom-select-trigger').on('click',
+    function(){
+        $('.subscribeInfo').show('2000');
+    });
 });
 
 //Styling checkbox
@@ -93,16 +127,6 @@ chbox2=document.getElementById('checkboxSubscribe');
 //Hide subscribe info block on click
 $('.subscribeInfo').on('click', function(){
     $('.subscribeInfo').hide('2000');
-});
-
-// Show cookies message on Click
-$(document).ready(function() {
-    $(".cookies").delay(1000).fadeIn(500);
-});
-
-// Hide cookies message on Click
-$('#cookiesBtn').on('click', function(){
-    $('.cookies').fadeOut('2000');
 });
 
 // Video video popUp
