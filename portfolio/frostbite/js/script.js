@@ -25,7 +25,9 @@ $preldr.delay(1000).fadeOut('slow');
     $('button.search').on('click', function(){
     if(open.style.display == 'none') {
         $('#site-search').css('display', 'inline-block');
+        $('#site-search').css('margin-top', '-2px');
     } else if (open.style.display == 'inline-block') {
         $('#site-search').css('display', 'none');
+        $('#site-search').css('margin-top', '0px');
     }
 });
