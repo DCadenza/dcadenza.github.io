@@ -15,28 +15,97 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+
+      <!-- Preloader -->
+      <div id="preloader">
+          <div class="container-preloader">
+              <span class="svg-animation"></span>
+          </div>
+      </div>
+
 <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="nav">
                 <div class="content">
-
+<!-- Navigation container -->
                     <div class="navigation-container">
                         <div class="navigation-container-inside">
+                            <div class="btn-close">
+                                <button type="button" name="button" class="close"><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="11px" height="11px">
+                                    <path fill-rule="evenodd"  fill="rgb(116, 116, 116)"
+                                    d="M10.986,9.614 L9.614,10.986 L5.481,6.852 L1.500,10.834 L0.166,9.500 L4.148,5.519 L0.015,1.386 L1.386,0.015 L5.519,4.148 L9.501,0.166 L10.834,1.499 L6.852,5.481 L10.986,9.614 Z"/>
+                                    </svg>
+                                </button>
+                            </div>
                             <div class="navigation-content">
-                                <div class="btn-close">
-                                    <button type="button" name="button" class="close"><svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        width="11px" height="11px">
-                                        <path fill-rule="evenodd"  fill="rgb(116, 116, 116)"
-                                        d="M10.986,9.614 L9.614,10.986 L5.481,6.852 L1.500,10.834 L0.166,9.500 L4.148,5.519 L0.015,1.386 L1.386,0.015 L5.519,4.148 L9.501,0.166 L10.834,1.499 L6.852,5.481 L10.986,9.614 Z"/>
-                                        </svg>
-                                    </button>
+                                <div class="nav-top">
+                                    <div class="nav-top-item">
+                                        <img src="images/menu/logo_menu.svg" alt="Our Story">
+                                        <a href="#">Our story</a>
+                                    </div>
+                                    <div class="nav-top-item">
+                                        <img src="images/menu/square.svg" alt="Services">
+                                        <a href="">Services</a>
+                                    </div>
+                                    <div class="nav-top-item">
+                                        <img src="images/menu/circle.svg" alt="Work">
+                                        <a href="">Work</a>
+                                    </div>
+                                    <div class="nav-top-item">
+                                        <img src="images/menu/triangle.svg" alt="Journal">
+                                        <a href="">Journal</a>
+                                    </div>
+                                    <div class="nav-top-item">
+                                        <img src="images/menu/romb.svg" alt="Contact">
+                                        <a href="">Contact</a>
+                                    </div>
                                 </div>
-                                <div class="content-items">
+                                <div class="nav-bottom">
+                                    <div class="nav-bottom-item">
+                                        <ul>
+                                            <li>Digital</li>
+                                            <li><a href="#">Baxvers</a></li>
+                                            <li><a href="#">Akari Sushi</a></li>
+                                            <li><a href="#">Hopkins Coffee</a></li>
+                                            <li><a href="#">bananaboat</a></li>
+                                            <li><a href="#">Eyeywear</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav-bottom-item">
+                                        <ul>
+                                            <li>Print</li>
+                                            <li><a href="#">Baxvers</a></li>
+                                            <li><a href="#">Akari Sushi</a></li>
+                                            <li><a href="#">Hopkins Coffee</a></li>
+                                            <li><a href="#">bananaboat</a></li>
+                                            <li><a href="#">Eyeywear</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav-bottom-item">
+                                        <ul>
+                                            <li>Mobile</li>
+                                            <li><a href="#">Baxvers</a></li>
+                                            <li><a href="#">Akari Sushi</a></li>
+                                            <li><a href="#">Hopkins Coffee</a></li>
+                                            <li><a href="#">bananaboat</a></li>
+                                            <li><a href="#">Eyeywear</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav-bottom-item">
+                                        <ul>
+                                            <li>Tablet</li>
+                                            <li><a href="#">Baxvers</a></li>
+                                            <li><a href="#">Akari Sushi</a></li>
+                                            <li><a href="#">Hopkins Coffee</a></li>
+                                            <li><a href="#">bananaboat</a></li>
+                                            <li><a href="#">Eyeywear</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -52,6 +121,10 @@
                     </div>
 
                     <div class="options">
+                        <div id="site-search" style="display: none;">
+                        <input type="search"  name="q"
+                        aria-label="Search through site content">
+                        </div>
 
                         <button type="button" name="button" class="search">
                             <svg
@@ -72,6 +145,8 @@
                                  d="M0.000,12.000 L0.000,10.000 L15.000,10.000 L15.000,12.000 L0.000,12.000 ZM0.000,5.000 L15.000,5.000 L15.000,7.000 L0.000,7.000 L0.000,5.000 ZM0.000,0.000 L15.000,0.000 L15.000,2.000 L0.000,2.000 L0.000,0.000 Z"/>
                                 </svg>
                         </button>
+
+
 
                     </div>
                 </div>
@@ -110,8 +185,7 @@
                             d="M70.541,6.999 L65.534,1.838 L60.527,6.999 L55.520,1.838 L50.514,6.999 L45.507,1.838 L40.500,6.999 L35.493,1.838 L30.486,6.999 L25.480,1.838 L20.473,6.999 L15.466,1.838 L10.459,6.999 L5.453,1.838 L0.891,6.539 L-0.000,5.621 L5.453,-0.000 L10.459,5.162 L15.466,-0.000 L20.473,5.162 L25.480,-0.000 L30.486,5.162 L35.493,-0.000 L40.500,5.162 L45.507,-0.000 L50.514,5.162 L55.520,-0.000 L60.527,5.162 L65.534,-0.000 L70.541,5.162 L75.547,-0.000 L81.000,5.621 L80.108,6.539 L75.547,1.838 L70.541,6.999 Z"/>
                             </svg>
                     </div>
-                    <h3>a team of creatives<br>based out of california
-                    </h3>
+                    <h3>a team of creatives<br>based out of california</h3>
                 </div>
 
                 <div class="who-we-are">
