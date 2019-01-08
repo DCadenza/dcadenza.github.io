@@ -14,3 +14,11 @@ function up() {
     } else clearTimeout(t);
     return false;
 };
+
+// Preloader
+$(window).on('load', function () {
+    var $preldr = $('#preloader'),
+        $svg_anm   = $preldr.find('.svg-animation');
+    $svg_anm.fadeOut();
+    $preldr.delay(1000).fadeOut('slow');
+    });
