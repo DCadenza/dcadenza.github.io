@@ -165,3 +165,18 @@ jQuery(document).ready(function($) {
         $(".triangle-iner-pages").css('display', 'block');
     }, 1000);
 });
+
+// Cookies
+// Show and Hide cookies message on Click
+$(document).ready(function(){
+    $("#cookiesBtn").click(function (){
+        $.cookie(".cookies", "24hourse", {expires: 0} );
+        $(".cookies").hide();
+    });
+
+    if ( $.cookie(".cookies") == null ) {
+        setTimeout(function(){
+            $(".cookies").show();
+        }, 4000)
+    } else { $(".cookies").hide();}
+});
