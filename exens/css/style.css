@@ -537,6 +537,59 @@ hr.nav-under-line {
   padding-left: 50px;
   padding-right: 50px;
 }
+.cookies__content a.cookies-close-btn {
+  width: 19px;
+  height: 19px;
+  margin-top: 7px;
+  margin-right: 18px;
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 999999;
+}
+.cookies__content a.cookies-close-btn:after {
+  display: block;
+  width: 19px;
+  height: 2px;
+  background-color: #A9ADB2;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+.cookies__content a.cookies-close-btn:before {
+  display: block;
+  width: 19px;
+  height: 2px;
+  background-color: #A9ADB2;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+.cookies__content a.cookies-close-btn:hover:before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.cookies__content a.cookies-close-btn:hover:after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
 @media only screen and (max-width: 1003px) {
   .cookies {
     height: auto;
