@@ -32,32 +32,62 @@
             <span></span>
         </button>
         <div class="mob-nav-container">
+            <a href="#" class="mob-nav-close-btn" onclick="navClose()"></a>
             <div class="mob-nav-container-content">
-                <div class="first-list">
-                    <ul>
-                        <li><a href="#">BRAND</a></li>
-                        <li><a href="#">PRODUCTS</a></li>
-                        <li><a href="#">NEWS</a></li>
-                        <li><a href="#">CONTACTS</a></li>
-                        <li><a href="#">E-SHOP</a></li>
-                        <li class="lang">
-                            <ul>
-                                <li><a href="#">FR</a></li>
-                                <li><a href="#">EN</a></li>
-                                <li><a href="#">RU</a></li>
+                <div class="accordion-m">
+                    <div class="accordion-item-m">
+                        <div class="accordion-head-m">
+                            <div class="hover-line"></div>
+                            <span class="title">BRAND</span>
+                            <span class="arrow-down-m"></span>
+                        </div>
+                        <div class="accordion-hidden-m">
+                            <ul class="">
+                                <li><a href="">HISTORY & FOOTPRINT</a></li>
+                                <li><a href="">VALUES</a></li>
+                                <li><a href="">MARKETING TOOLS</a></li>
+                                <li><a href="">TROPHIES</a></li>
+                                <li><a href="">COMMITMENT TO QUALITY</a></li>
+                                <li><a href="">CGV</a></li>
+                                <li><a href="">SUSTAINABLE DEVELOPMENT</a></li>
                             </ul>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item-m">
+                        <div class="accordion-head-m">
+                            <div class="hover-line"></div>
+                            <span class="title"><a href="">PRODUCTS</a></span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item-m">
+                        <div class="accordion-head-m">
+                            <div class="hover-line"></div>
+                            <span class="title">NEWS</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item-m">
+                        <div class="accordion-head-m">
+                            <div class="hover-line"></div>
+                            <span class="title">CONTACTS</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item-m">
+                        <div class="accordion-head-m no-border-bottom">
+                            <div class="hover-line"></div>
+                            <span class="title"><a href="">E-SHOP</a></span>
+                        </div>
+                    </div>
                 </div>
-                <div class="second-list">
-                    <ul class="">
-                        <li><a href="">HISTORY & FOOTPRINT</a></li>
-                        <li><a href="">VALUES</a></li>
-                        <li><a href="">MARKETING TOOLS</a></li>
-                        <li><a href="">TROPHIES</a></li>
-                        <li><a href="">COMMITMENT TO QUALITY</a></li>
-                        <li><a href="">CGV</a></li>
-                        <li><a href="">SUSTAINABLE DEVELOPMENT</a></li>
+                <div class="lang">
+                    <ul>
+                        <li><a href="#">FR</a></li>
+                        <li><a href="#">EN</a></li>
+                        <li><a href="#">RU</a></li>
+                        <li><a href="#">US</a></li>
                     </ul>
                 </div>
             </div>
@@ -85,6 +115,7 @@
                                 <li><a href="#">FR</a></li>
                                 <li><a href="#">EN</a></li>
                                 <li><a href="#">RU</a></li>
+                                <li><a href="#">US</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -96,6 +127,24 @@
 
 <!-- Navigation underline -->
 <hr class="nav-under-line wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.5s">
+
+<!-- Cookies section -->
+<section class="cookies">
+    <div class="container">
+        <div class="container-inside">
+            <div class="cookies__content">
+                <a href="#" class="cookies-close-btn" onclick="closePopUp()"></a>
+                <div class="cookies__content-text">
+                    <span class="cookies-header">Cookies & Privacy</span>
+                    <span class="cookies-text">This website uses cookies to ensure you get the best experience on our website</span>
+                </div>
+                <div class="cookies-btns">
+                    <button id="cookiesBtn" class="agree" type="button" name="button">I agree</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Hero Section -->
 

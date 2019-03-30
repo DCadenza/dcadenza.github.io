@@ -13,6 +13,7 @@
     <meta property="og:site_name" content="" />
     <meta property="og:image" content="" />
     <title>COMMITMENT TO QUALITY</title>
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
     <link href="css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -20,7 +21,7 @@
 </head>
 
 <body>
-    
+
     <!-- Global nav Section -->
 
     <div class="global-nav">
@@ -31,32 +32,62 @@
                 <span></span>
             </button>
             <div class="mob-nav-container">
+                <a href="#" class="mob-nav-close-btn" onclick="navClose()"></a>
                 <div class="mob-nav-container-content">
-                    <div class="first-list">
-                        <ul>
-                            <li class="tnl-active"><a href="#">BRAND</a></li>
-                            <li><a href="#">PRODUCTS</a></li>
-                            <li><a href="#">NEWS</a></li>
-                            <li><a href="#">CONTACTS</a></li>
-                            <li><a href="#">E-SHOP</a></li>
-                            <li class="lang">
-                                <ul>
-                                    <li><a href="#">FR</a></li>
-                                    <li><a href="#">EN</a></li>
-                                    <li><a href="#">RU</a></li>
+                    <div class="accordion-m">
+                        <div class="accordion-item-m">
+                            <div class="accordion-head-m">
+                                <div class="hover-line"></div>
+                                <span class="title">BRAND</span>
+                                <span class="arrow-down-m"></span>
+                            </div>
+                            <div class="accordion-hidden-m">
+                                <ul class="">
+                                    <li><a href="">HISTORY & FOOTPRINT</a></li>
+                                    <li><a href="">VALUES</a></li>
+                                    <li><a href="">MARKETING TOOLS</a></li>
+                                    <li><a href="">TROPHIES</a></li>
+                                    <li><a href="">COMMITMENT TO QUALITY</a></li>
+                                    <li><a href="">CGV</a></li>
+                                    <li><a href="">SUSTAINABLE DEVELOPMENT</a></li>
                                 </ul>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item-m">
+                            <div class="accordion-head-m">
+                                <div class="hover-line"></div>
+                                <span class="title"><a href="">PRODUCTS</a></span>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item-m">
+                            <div class="accordion-head-m">
+                                <div class="hover-line"></div>
+                                <span class="title">NEWS</span>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item-m">
+                            <div class="accordion-head-m">
+                                <div class="hover-line"></div>
+                                <span class="title">CONTACTS</span>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item-m">
+                            <div class="accordion-head-m no-border-bottom">
+                                <div class="hover-line"></div>
+                                <span class="title"><a href="">E-SHOP</a></span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="second-list">
-                        <ul class="">
-                            <li><a href="">HISTORY & FOOTPRINT</a></li>
-                            <li><a href="">VALUES</a></li>
-                            <li><a href="">MARKETING TOOLS</a></li>
-                            <li><a href="">TROPHIES</a></li>
-                            <li><a href="">COMMITMENT TO QUALITY</a></li>
-                            <li><a href="">CGV</a></li>
-                            <li><a href="">SUSTAINABLE DEVELOPMENT</a></li>
+                    <div class="lang">
+                        <ul>
+                            <li><a href="#">FR</a></li>
+                            <li><a href="#">EN</a></li>
+                            <li><a href="#">RU</a></li>
+                            <li><a href="#">US</a></li>
                         </ul>
                     </div>
                 </div>
@@ -84,6 +115,7 @@
                                     <li><a href="#">FR</a></li>
                                     <li><a href="#">EN</a></li>
                                     <li><a href="#">RU</a></li>
+                                    <li><a href="#">US</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -127,26 +159,94 @@
                     </div>
                     <div class="commitment-page-content">
                         <div class="commitment-page-content-items">
-                            <div class="item">
-                                <a href="">
+                            <div class="item" onclick="certShow1()">
                                     <img src="images/commitment/eco_cert.png" alt="Eco Cert">
-                                </a>
                             </div>
-                            <div class="item">
-                                <a href="">
+                            <div class="item" onclick="certShow2()">
                                     <img src="images/commitment/cosme_bio.png" alt="Cosme Bio">
-                                </a>
                             </div>
-                            <div class="item">
-                                <a href="">
+                            <div class="item" onclick="certShow3()">
                                     <img src="images/commitment/iso.png" alt="ISO">
-                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+    <div class="slider-overlay"></div>
+
+    <div class="doc-popup-container-1">
+        <a href="#" class="cert-close-btn" onclick="closePopUpCert()"></a>
+
+        <div class="mySlides1">
+            <div class="image-content">
+                <img src="images/certificate/certificate.png" alt="Certificate">
+            </div>
+            <span class="slide-description">
+                Since 2017, most of our products are COSMOS ORGANIC certified. The COSMOS-standard is owned and managed by a not-for-profit, international association. COSMOS-certified products are produced to the highest standards for organic and natural cosmetics, and are safe, effective and good to use.  They are easy to identify by their labels which contain all the information you need to choose a product that fulfils your needs and expectations.
+            </span>
+        </div>
+
+        <div class="mySlides1">
+            <div class="image-content">
+                <img src="images/certificate/certificate.png" alt="Certificate">
+            </div>
+            <span class="slide-description">
+                Since 2017, most of our products are COSMOS ORGANIC certified. The COSMOS-standard is owned and managed by a not-for-profit, international association.
+            </span>
+        </div>
+        <button class="doc-button-left" onclick="plusDivs(-1, 0)"><img src="images/arrow-btn.png" alt="Arrow left"></button>
+        <button class="doc-button-right" onclick="plusDivs(1, 0)"><img src="images/arrow-btn.png" alt="Arrow left"></button>
+    </div>
+
+    <div class="doc-popup-container-2">
+        <a href="#" class="cert-close-btn" onclick="closePopUpCert()"></a>
+
+        <div class="mySlides2">
+            <div class="image-content">
+                <img src="images/commitment/cosme_bio.png" alt="Certificate">
+            </div>
+            <span class="slide-description">
+                Since 2017, most of our products are COSMOS ORGANIC certified. The COSMOS-standard is owned and managed by a not-for-profit, international association. COSMOS-certified products are produced to the highest standards for organic and natural cosmetics, and are safe, effective and good to use.  They are easy to identify by their labels which contain all the information you need to choose a product that fulfils your needs and expectations.
+            </span>
+        </div>
+
+        <div class="mySlides2">
+            <div class="image-content">
+                <img src="images/commitment/iso.png" alt="Certificate">
+            </div>
+            <span class="slide-description">
+                Since 2017, most of our products are COSMOS ORGANIC certified. The COSMOS-standard is owned and managed by a not-for-profit, international association.
+            </span>
+        </div>
+        <button class="doc-button-left" onclick="plusDivs(-1, 1)"><img src="images/arrow-btn.png" alt="Arrow left"></button>
+        <button class="doc-button-right" onclick="plusDivs(1, 1)"><img src="images/arrow-btn.png" alt="Arrow left"></button>
+    </div>
+
+    <div class="doc-popup-container-3">
+        <a href="#" class="cert-close-btn" onclick="closePopUpCert()"></a>
+
+        <div class="mySlides3">
+            <div class="image-content">
+                <img src="images/commitment/iso.png" alt="Certificate">
+            </div>
+            <span class="slide-description">
+                Since 2017, most of our products are COSMOS ORGANIC certified. The COSMOS-standard is owned and managed by a not-for-profit, international association. COSMOS-certified products are produced to the highest standards for organic and natural cosmetics, and are safe, effective and good to use.  They are easy to identify by their labels which contain all the information you need to choose a product that fulfils your needs and expectations.
+            </span>
+        </div>
+
+        <div class="mySlides3">
+            <div class="image-content">
+                <img src="images/commitment/eco_cert.png" alt="Certificate">
+            </div>
+            <span class="slide-description">
+                Since 2017, most of our products are COSMOS ORGANIC certified. The COSMOS-standard is owned and managed by a not-for-profit, international association.
+            </span>
+        </div>
+        <button class="doc-button-left" onclick="plusDivs(-1, 1)"><img src="images/arrow-btn.png" alt="Arrow left"></button>
+        <button class="doc-button-right" onclick="plusDivs(1, 2)"><img src="images/arrow-btn.png" alt="Arrow left"></button>
+    </div>
 
     <!-- Subscribe section -->
 
@@ -199,6 +299,7 @@
             </div>
         </footer>
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="assets/slick/slick.js"></script>
         <script src="js/wow.min.js"></script>
         <script>
         jQuery(document).ready(function($) {

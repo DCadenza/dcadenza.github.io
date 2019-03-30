@@ -180,3 +180,11 @@ $(document).ready(function(){
         }, 4000)
     } else { $(".cookies").hide();}
 });
+
+
+
+
+
+$('.ty-menu__items').on('click', function(){
+    $('.ty-menu__items').css('height', 'auto', 'overflow', 'visible');
+});
