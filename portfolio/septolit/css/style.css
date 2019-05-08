@@ -268,7 +268,7 @@ html {
   outline: none;
   text-transform: uppercase;
 }
-.popUpCoupon-content-main button img {
+.popUpCoupon-content-main button svg {
   padding-right: 9px;
   vertical-align: middle;
   margin-top: -1px;
