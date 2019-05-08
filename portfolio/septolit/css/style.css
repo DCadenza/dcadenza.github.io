@@ -312,8 +312,8 @@ html {
   font-style: normal;
   position: absolute;
   color: #27b21c;
-  margin-left: 1px;
-  margin-top: -1px;
+  margin-left: 2px;
+  margin-top: -2px;
 }
 .popUpCoupon-content-main .checkbox-block span.desc {
   font-family: 'Montserrat Regular', sans-serif;
