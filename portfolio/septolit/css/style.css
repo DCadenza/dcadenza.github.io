@@ -1,0 +1,518 @@
+@font-face {
+  font-family: 'Helios Black';
+  src: url('../fonts/Helios Black.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Helios';
+  src: url('../fonts/Helios.otf') format('truetype');
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: grey;
+  position: relative;
+}
+html {
+  margin: 0px;
+  padding: 0px;
+}
+.popUpCoupon {
+  display: block;
+  background-color: #ffffff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 9999;
+  max-width: 792px;
+  width: 100%;
+  padding-bottom: 36px;
+  -webkit-box-shadow: 0px 0px 25px 7px #EFEFEF;
+          box-shadow: 0px 0px 25px 7px #EFEFEF;
+}
+.popUpCoupon-content {
+  position: relative;
+  display: block;
+}
+.popUpCoupon-content .cls-btn button {
+  position: absolute;
+  color: #aeaeae;
+  font-family: 'Helios', sans-serif;
+  top: 0px;
+  right: 0px;
+  z-index: 1000000;
+  margin: 0px;
+  padding: 0px;
+  margin-right: 8px;
+  margin-top: 10px;
+  border: 0px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+.popUpCoupon-content .cls-btn button svg {
+  height: 19px;
+  width: 19px;
+}
+.popUpCoupon-content-header {
+  padding-top: 35px;
+  background-color: #F8F8F8;
+  text-align: center;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.popUpCoupon-content-header h1 {
+  margin: 0px;
+  color: #17183b;
+  font-family: 'Helios Black', sans-serif;
+  font-size: 22px;
+  line-height: 39px;
+  text-transform: uppercase;
+}
+.popUpCoupon-content-header p {
+  display: block;
+  margin: 0px;
+  margin-top: 4px;
+  padding-bottom: 17px;
+  color: #17183b;
+  font-family: 'Helios', sans-serif;
+  font-size: 14px;
+  line-height: 39px;
+}
+.popUpCoupon-content-header p span {
+  color: #9c1d6e;
+  font-family: 'Helios', sans-serif;
+  font-size: 18px;
+}
+.popUpCoupon-content-main {
+  text-align: center;
+  padding-top: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.popUpCoupon-content-main h2 {
+  color: #17183b;
+  font-family: 'Helios', sans-serif;
+  font-size: 18px;
+  line-height: 39px;
+  margin: 0px;
+}
+.popUpCoupon-content-main .options {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.popUpCoupon-content-main .options .option {
+  margin-right: 27px;
+}
+.popUpCoupon-content-main .options .option:last-child {
+  margin-right: 0px;
+}
+.popUpCoupon-content-main .options .option img {
+  display: block;
+  max-width: 44px;
+  clear: both;
+  margin: 0 auto;
+  padding-left: 4px;
+  padding-bottom: 12px;
+}
+.popUpCoupon-content-main .options .option .form-radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  background-color: #ffffff;
+  color: #ffffff;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #888888;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin: 0px;
+  margin-right: 7px;
+}
+.popUpCoupon-content-main .options .option .form-radio:checked::before {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  content: '';
+  background-color: #ffffff;
+  width: 4px;
+  height: 4px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+}
+.popUpCoupon-content-main .options .option .form-radio:hover {
+  background-color: #f7f7f7;
+}
+.popUpCoupon-content-main .options .option .form-radio:checked {
+  background-color: #1c1c1c;
+}
+.popUpCoupon-content-main .options .option span {
+  text-align: left;
+  max-width: 74px;
+  display: inline-block;
+  color: #17183b;
+  font-family: 'Helios', sans-serif;
+  font-size: 13.98px;
+  line-height: 17.98px;
+}
+.popUpCoupon-content-main .inputs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 33px;
+  margin-bottom: 30px;
+}
+.popUpCoupon-content-main .inputs input[type='text'] {
+  margin-right: 15px;
+  border: 1px solid #17183b;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  font-family: 'Helios', sans-serif;
+  color: #858585;
+  font-size: 12px;
+  width: 267px;
+  height: 28px;
+  -webkit-appearance: none;
+  outline: none;
+  padding-top: 4px;
+}
+.popUpCoupon-content-main .inputs input[type='text']::-webkit-input-placeholder {
+  padding-left: 12px;
+}
+.popUpCoupon-content-main .inputs input[type='text']::-moz-placeholder {
+  padding-left: 12px;
+}
+.popUpCoupon-content-main .inputs input[type='text']::-ms-input-placeholder {
+  padding-left: 12px;
+}
+.popUpCoupon-content-main .inputs input[type='text']::placeholder {
+  padding-left: 12px;
+}
+.popUpCoupon-content-main .inputs input[type='email'] {
+  margin-left: 15px;
+  border: 1px solid #17183b;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  color: #858585;
+  font-family: 'Helios', sans-serif;
+  font-size: 12px;
+  width: 267px;
+  height: 27px;
+  -webkit-appearance: none;
+  outline: none;
+  padding-top: 5px;
+}
+.popUpCoupon-content-main .inputs input[type='email']::-webkit-input-placeholder {
+  padding-left: 12px;
+}
+.popUpCoupon-content-main .inputs input[type='email']::-moz-placeholder {
+  padding-left: 12px;
+}
+.popUpCoupon-content-main .inputs input[type='email']::-ms-input-placeholder {
+  padding-left: 12px;
+}
+.popUpCoupon-content-main .inputs input[type='email']::placeholder {
+  padding-left: 12px;
+}
+.popUpCoupon-content-main button {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 8px;
+  padding-bottom: 3px;
+  background-color: #18ad0c;
+  border: 0px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: 'Helios', sans-serif;
+  line-height: 39px;
+  font-size: 14px;
+  outline: none;
+  text-transform: uppercase;
+}
+.popUpCoupon-content-main button img {
+  padding-right: 9px;
+  vertical-align: middle;
+  margin-top: -1px;
+}
+.popUpCoupon-content-main .checkbox-block {
+  margin-top: 22px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.popUpCoupon-content-main .checkbox-block-btn {
+  margin-right: 13px;
+}
+.popUpCoupon-content-main .checkbox-block-btn input[type="checkbox"] {
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  -webkit-border-radius: 0px;
+          border-radius: 0px;
+  margin: 0px;
+  -webkit-appearance: none;
+  outline: none;
+  background-color: #ffffff;
+  border: 1px solid #7c7c7c;
+  font-style: normal;
+}
+.popUpCoupon-content-main .checkbox-block-btn input[type="checkbox"]:checked:after {
+  content: '\2713';
+  font-size: 11px;
+  font-style: normal;
+  position: absolute;
+  color: #27b21c;
+  margin-left: 1px;
+  margin-top: -1px;
+}
+.popUpCoupon-content-main .checkbox-block span.desc {
+  font-family: 'Montserrat Regular', sans-serif;
+  color: #858585;
+  font-family: 'Helios', sans-serif;
+  font-size: 13.09px;
+  line-height: 20.13px;
+}
+.popUpCoupon-content-main .additional-info {
+  margin-top: 5px;
+}
+.popUpCoupon-content-main .additional-info span {
+  color: #858585;
+  font-family: 'Helios', sans-serif;
+  font-size: 13.09px;
+  line-height: 20.13px;
+}
+@media only screen and (max-width: 618px) {
+  .popUpCoupon-content {
+    position: relative;
+    display: block;
+  }
+  .popUpCoupon-content .cls-btn button {
+    margin-right: 8px;
+    margin-top: 10px;
+  }
+  .popUpCoupon-content .cls-btn button svg {
+    height: 19px;
+    width: 19px;
+  }
+  .popUpCoupon-content-header h1 {
+    font-size: 16px;
+  }
+  .popUpCoupon-content-header p {
+    margin-top: 4px;
+    padding-bottom: 17px;
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 330px;
+    margin: 0 auto;
+  }
+  .popUpCoupon-content-header p span {
+    font-size: 18px;
+  }
+  .popUpCoupon-content-main {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 12px;
+  }
+  .popUpCoupon-content-main h2 {
+    font-size: 17px;
+  }
+  .popUpCoupon-content-main .options {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .popUpCoupon-content-main .options .option {
+    margin-bottom: 31px;
+    margin-right: 13.5px;
+    margin-left: 13.5px;
+  }
+  .popUpCoupon-content-main .options .option:last-child {
+    margin-right: 13.5px;
+  }
+  .popUpCoupon-content-main .options .option img {
+    padding-left: 4px;
+    padding-bottom: 12px;
+  }
+  .popUpCoupon-content-main .options .option span {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .popUpCoupon-content-main .inputs {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-top: 2px;
+    margin-bottom: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .popUpCoupon-content-main .inputs input[type='text'] {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .popUpCoupon-content-main .inputs input[type='email'] {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  .popUpCoupon-content-main .checkbox-block {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 22px;
+  }
+  .popUpCoupon-content-main .checkbox-block-btn {
+    margin-right: 10px;
+  }
+  .popUpCoupon-content-main .checkbox-block span.desc {
+    line-height: 20.13px;
+    text-align: left;
+  }
+  .popUpCoupon-content-main .additional-info {
+    margin-top: 5px;
+  }
+  .popUpCoupon-content-main .additional-info span {
+    color: #858585;
+    font-family: 'Helios', sans-serif;
+    font-size: 13.09px;
+    line-height: 20.13px;
+  }
+}
+.popUpMessage {
+  display: none;
+  background-color: #ffffff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 9999;
+  max-width: 682px;
+  width: 100%;
+  padding-bottom: 24px;
+  -webkit-box-shadow: 0px 0px 25px 7px #EFEFEF;
+          box-shadow: 0px 0px 25px 7px #EFEFEF;
+}
+.popUpMessage-content {
+  position: relative;
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.popUpMessage-content button {
+  position: absolute;
+  color: #aeaeae;
+  font-family: 'Helios', sans-serif;
+  top: 0px;
+  right: 0px;
+  z-index: 1000000;
+  margin: 0px;
+  padding: 0px;
+  margin-right: 8px;
+  margin-top: 10px;
+  border: 0px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+.popUpMessage-content button svg {
+  height: 19px;
+  width: 19px;
+}
+.popUpMessage-content-header {
+  padding-top: 35px;
+  background-color: #F8F8F8;
+  text-align: center;
+  position: relative;
+  padding-bottom: 27px;
+}
+.popUpMessage-content-header h1 {
+  max-width: 580px;
+  margin: 0 auto;
+  color: #17183b;
+  font-family: 'Helios Black', sans-serif;
+  font-size: 22px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.popUpMessage-content-main {
+  padding-top: 24px;
+  text-align: center;
+}
+.popUpMessage-content-main p {
+  color: #858585;
+  font-family: 'Helios', sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  margin: 0px;
+}
+@media only screen and (max-width: 618px) {
+  .popUpMessage-content button {
+    margin-right: 8px;
+    margin-top: 10px;
+  }
+  .popUpMessage-content button svg {
+    height: 19px;
+    width: 19px;
+  }
+  .popUpMessage-content-header {
+    padding-top: 35px;
+    padding-bottom: 27px;
+  }
+  .popUpMessage-content-header h1 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
