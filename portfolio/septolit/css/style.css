@@ -429,6 +429,17 @@ html {
     line-height: 20.13px;
   }
 }
+@media only screen and (max-width: 411px) {
+  .popUpCoupon {
+    margin-top: 30px;
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+}
 .popUpMessage {
   display: none;
   background-color: #ffffff;
@@ -514,5 +525,16 @@ html {
   .popUpMessage-content-header h1 {
     font-size: 16px;
     line-height: 20px;
+  }
+}
+@media only screen and (max-width: 411px) {
+  .popUpMessage {
+    margin-top: 30px;
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
   }
 }
