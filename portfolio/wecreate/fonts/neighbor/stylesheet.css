@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Neighbor [RUS by Daymarius]';
+    src: url('NeighborRUSbyDaymarius.eot');
+    src: url('NeighborRUSbyDaymarius.eot?#iefix') format('embedded-opentype'),
+        url('NeighborRUSbyDaymarius.woff2') format('woff2'),
+        url('NeighborRUSbyDaymarius.woff') format('woff'),
+        url('NeighborRUSbyDaymarius.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
