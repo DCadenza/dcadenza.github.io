@@ -5184,7 +5184,6 @@ button {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   cursor: pointer;
-  text-decoration: underline;
   color: #232323;
 }
 .contacts-content-form-content .submit-button {
