@@ -102,72 +102,98 @@
                 <div class="top-content">
                     <h4>
                         <span>#We</span>Create Support
-                        <div class="header-underline">
-                            <hr class="short-line">
-                            <hr class="long-line">
-                            <hr class="short-line">
-                        </div>
                     </h4>
+                    <div class="header-underline">
+                        <hr class="short-line">
+                        <hr class="long-line">
+                        <hr class="short-line">
+                    </div>
                     <p>Зараз Craftpoint знаходиться в процесі формування та відбору товарів українських виробників. WeCreate є новий інтернет-майданчик Craftpoint для представлення та реалізації продукції. Ключові критерії відбору продукції та виробників це українське виробництво, бездоганна якість, малопромислове або індивідуальне виробництво.</p>
                 </div>
                 <div class="bottom-content">
                     <div class="bottom-content-inputs">
-                        <form id="partnerForm" method="get" action="">
+                        <form enctype="multipart/form-data" id="partnerForm" method="get" action="" autocomplete="on">
                             <div class="wrapper">
-                                <input type="text" id="" name="name" aria-label="" placeholder="Название компании">
-
-                                <div class="select-field">
-                                    <div class="form">
-                                        <select name="sources" id="" class="custom-select sources" placeholder="Вид деятельности">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select>
+                                    <div class="input-with-desc">
+                                        <input type="text" id="" name="name" aria-label="" placeholder="Название компании" required>
                                     </div>
-                                </div>
-
-                                <input type="text" id="" name="area" aria-label="" placeholder="Введите названия вида деятельности">
-
-                                <textarea type="text" id="" name="description" aria-label="" placeholder="Oписание" maxlength="10" size="100"></textarea>
-
-                                <textarea type="text" id="" name="proposal" aria-label="" placeholder="Ваше спецпредложение" maxlength="10" size="100"></textarea>
-
-                                <input type="tel" id="" name="tel" aria-label="" placeholder="Телефон">
-
-                                <input type="email" id="" name="e-mail" aria-label="" placeholder="E-mail">
-
-                                <input type="text" id="" name="facebook" aria-label="" placeholder="Facebook">
-
-                                <input type="text" id="" name="site" aria-label="" placeholder="Вэб-сайт">
-
-                                <input type="text" id="" name="town" aria-label="" placeholder="Город">
-
-                                <input type="text" id="" name="adress" aria-label="" placeholder="Адрес компании">
-
-                                <div class="add-image">
-                                    <div class="field">
-                                        <div class="img-container">
-                                            <button><img src="images/plus.svg" alt="Plus button"></button>
-                                            <button class="clear"><img src="images/close.svg" alt=""></button>
+                                    <div class="input-with-desc">
+                                        <div class="select-field">
+                                            <div class="form">
+                                                <select name="sources" id="" class="custom-select sources" placeholder="Вид деятельности" required>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="3">3</option>
+                                                    <option value="3">3</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                            </div>
                                         </div>
-                                        <span>Добавить логотип, изображение на белом фоне (мин. 300х200px) jpg, png</span>
                                     </div>
+                                <div class="input-with-desc-full">
+                                    <input type="text" id="" name="area" aria-label="" placeholder="Введите названия вида деятельности" required>
+                                </div>
+                                <div class="input-with-desc-full">
+                                    <textarea type="text" id="" name="description" aria-label="" placeholder="Oписание" maxlength="10" size="100" required></textarea>
                                 </div>
 
+                                <div class="input-with-desc-full">
+                                    <textarea type="text" id="" name="proposal" aria-label="" placeholder="Ваше спецпредложение" maxlength="10" size="100" required></textarea>
+                                </div>
+
+                                <div class="input-with-desc">
+                                    <input type="tel" id="" name="tel" aria-label="" placeholder="Телефон" required>
+                                </div>
+
+                                <div class="input-with-desc">
+                                    <input type="email" id="" name="e-mail" aria-label="" placeholder="E-mail" required>
+                                </div>
+
+                                <div class="input-with-desc">
+                                    <input type="text" id="" name="facebook" aria-label="" placeholder="Facebook">
+                                </div>
+
+                                <div class="input-with-desc">
+                                    <input type="text" id="" name="site" aria-label="" placeholder="Вэб-сайт">
+                                </div>
+
+                                <div class="input-with-desc">
+                                    <input type="text" id="" name="town" aria-label="" placeholder="Город" required>
+                                </div>
+
+                                <div class="input-with-desc">
+                                    <input type="text" id="" name="adress" aria-label="" placeholder="Адрес компании" required>
+                                </div>
+                                <div class="add-image">
+                                    <div class="fields">
+                                        <div class="addlogo">
+                                            <div class="logoImg-content">
+                                                <button type=button class="clear" id="delLogo"><img src="images/close.svg" alt=""></button>
+                                                <div id="drop_zone1" class="drop-zone">
+                                                    <div class="preview-container"></div>
+                                                </div>
+                                                <input id="file_input1" type="file" multiple accept="image/png, image/jpg" min-width="300" min-height="400">
+                                            </div>
+                                            <div class="file-upload-desc">
+                                                <span>Добавить логотип, изображение на белом фоне (мин. 300х200px) jpg, png</span>
+                                                <span class="image-size-alert">Размер файла не должен превышать 200 мб</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="subscribe-check">
                                     <div class="subscribe-check-btn">
-                                        <input type="checkbox" name="" id="" value="" class="subscribe-info-checkbox">
+                                        <input type="checkbox" name="" id="info-agree" value="" class="subscribe-info-checkbox" required>
                                     </div>
-                                    <span class="subscribe-check-desc">Этим я подтверждаю достоверность поданной мной информации</span>
+                                    <span class="subscribe-check-desc" id="info-text">Этим я подтверждаю достоверность поданной мной информации</span>
                                 </div>
-
                                 <div class="subscribe-check">
                                     <div class="subscribe-check-btn">
-                                        <input type="checkbox" name="" id="" value="" checked class="subscribe-info-checkbox">
+                                        <input type="checkbox" name="" id="politics-agree" value="" checked class="subscribe-info-checkbox" required>
                                     </div>
-                                    <span class="subscribe-check-desc">Согласен с политикой конфиденциальности<br/><span class="i-agree-alert">Подтвердите своё согласие</span></span>
+                                    <span class="subscribe-check-desc" id="politics-text">Согласен с политикой конфиденциальности<br/><span class="i-agree-alert">Подтвердите своё согласие</span></span>
                                 </div>
-
                                 <div class="submit-button">
                                     <button type="submit">Стать партнёром</button>
                                 </div>
@@ -200,7 +226,7 @@
                     </div>
                     <h1>Компания ремесленной палаты Украины</h1>
                     <div class="subscribe-form">
-                        <form action="">
+                        <form action="" id="subscribeForm">
                             <input type="text" placeholder="E-mail" class="subscribe-input" required>
                             <button type="submit" name="button" id="subscribeBtn">Підписатися</button>
                         </form>
@@ -240,6 +266,35 @@ jQuery(document).ready(function($) {
 <script type="text/javascript" src="js/jquery.validate.js"></script>
 <script>
     $("#partnerForm").validate();
+</script>
+<script>
+    $("#subscribeForm").validate();
+</script>
+<!-- File upload -->
+<script type="text/javascript" src="js/jquery.smartuploader.min.js"></script>
+<script type="text/javascript">
+$("#file_input1").withDropZone("#drop_zone1", {
+  action: {
+    name: "image",
+    params: {
+      preview: true,
+    }
+  },
+});
+</script>
+<!-- Checkout #1 -->
+<script type="text/javascript">
+    $('#info-text').click(function(){
+    var check = $('#info-agree');
+    check.attr('checked', !check.attr('checked'));
+});
+</script>
+<!-- Checkout #2 -->
+<script type="text/javascript">
+    $('#politics-text').click(function(){
+    var check = $('#politics-agree');
+    check.attr('checked', !check.attr('checked'));
+});
 </script>
 <script type="text/javascript" src="js/script.js"></script>
 </body>

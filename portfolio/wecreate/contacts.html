@@ -96,7 +96,7 @@
         <h3 class="sub-header-text">Контакты</h3>
 </section>
 
-    <!-- Creators section -->
+    <!-- Contacts section -->
     <section class="contacts">
         <div class="container-inside">
             <div class="contacts-content">
@@ -125,7 +125,6 @@
                         <a href="" class="no-active">г. Киев, ул. Крещатик, д. 62</a>
                     </span>
                     <span>
-                        <!-- <img src="images/contact-page/facebook.png" alt="Facebook page"> -->
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29px" height="28px"> <path fill-rule="evenodd"  fill="rgb(236, 145, 46)" d="M14.922,-0.000 C22.697,-0.000 29.000,6.219 29.000,13.891 C29.000,21.562 22.697,27.781 14.922,27.781 C7.147,27.781 0.844,21.562 0.844,13.891 C0.844,6.219 7.147,-0.000 14.922,-0.000 Z"/> <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M17.975,7.107 C17.975,7.966 17.975,9.505 17.975,9.505 C17.975,9.505 16.461,9.330 16.081,10.007 C15.874,10.378 15.997,11.462 15.979,12.241 C16.640,12.241 17.326,12.241 17.987,12.241 C17.817,13.151 17.696,13.768 17.571,14.557 C16.999,14.557 15.967,14.557 15.967,14.557 L15.967,22.010 C15.967,22.010 14.075,22.010 13.185,22.010 C13.186,19.712 13.185,17.032 13.185,14.585 C12.753,14.585 12.433,14.585 12.001,14.585 C12.001,13.727 12.001,13.100 12.001,12.241 C12.421,12.241 12.752,12.241 13.172,12.241 C13.232,10.526 13.255,8.827 13.984,7.963 C14.804,6.990 15.586,7.107 17.975,7.107 Z"/>
                         </svg>
                         <a href="http://facebook.com/sadow">facebook/sadow</a>
@@ -143,19 +142,18 @@
                 <div class="contacts-content-form">
                     <h4>Отправить сообщение</h4>
                     <div class="contacts-content-form-content">
-                        <form id="contactForm" method="get" action="">
+                        <form id="contactForm" method="get" action="" enctype="form-data">
                             <div class="inline-input">
-                                <input type="text" name="name" placeholder="Имя" class="input-name" minlength="2" required>
-                                <input type="tel" name="phone" placeholder="Телефон" class="input-phone">
+                                <input type="text" name="name" placeholder="Имя" class="input-name" minlength="2" pattern="[а-яА-ЯёЁ]{2,64}" required>
+                                <input type="tel" name="phone" placeholder="Телефон" class="input-phone" required>
                             </div>
-                            <label id="name" for="name"><span>Имя не короче 2-х символов</span></label>
                             <input type="email" name="email" placeholder="E-mail" class="input-email" required>
                             <textarea name="message" placeholder="Сообщение" class="input-message" required></textarea>
                             <div class="subscribe-check">
                                 <div class="subscribe-check-btn">
-                                    <input type="checkbox" name="" id="agree" value="" class="subscribe-info-checkbox" required>
+                                    <input type="checkbox" name="checkbox" id="agree" value="0" class="subscribe-info-checkbox" required />
                                 </div>
-                                <span class="subscribe-check-desc" ><span id="agree-text">Согласен с</span> <a href="#">политикой конфиденциальности</a></span>
+                                <span class="subscribe-check-desc" ><span id="agree-text">Согласен с</span><a href="#"> политикой конфиденциальности</a></span>
                             </div>
                             <div class="submit-button">
                                 <button type="submit" name="button">Отправить</button>
@@ -189,7 +187,7 @@
                     </div>
                     <h1>Компания ремесленной палаты Украины</h1>
                     <div class="subscribe-form">
-                        <form action="">
+                        <form action="" id="subscribeForm">
                             <input type="text" placeholder="E-mail" class="subscribe-input" required>
                             <button type="submit" name="button" id="subscribeBtn">Підписатися</button>
                         </form>
@@ -226,21 +224,19 @@
         new WOW().init();
         });
 </script>
-
 <script>
-    jQuery(document).ready(function($) {
-        document.getElementById('agree-text').onclick = function () {
-            document.getElementById('agree').checked = !0;
-        };
-        });
+    $('#agree-text').click(function(){
+    var check = $('#agree');
+    check.attr('checked', !check.attr('checked'));
+});
 </script>
-
-
 <script type="text/javascript" src="js/jquery.validate.js"></script>
 <script>
     $("#contactForm").validate();
 </script>
-
+<script>
+    $("#subscribeForm").validate();
+</script>
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

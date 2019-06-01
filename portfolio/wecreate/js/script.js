@@ -90,6 +90,8 @@ $(document).ready(function(){
                  speed: 500,
                  slidesToShow: 4,
                  slidesToScroll: 1,
+                 autoplay: true,
+                 autoplaySpeed: 3000,
                  responsive: [
                      {
                        breakpoint: 1384,
@@ -168,15 +170,27 @@ jQuery(document).ready(function($) {
         $(".mob-nav-container").hide();
     });
 
-// Popup simple!!! close function
+// Popup kved
 function openPopUpKved() {
     $('.popUp-kved').css('display', 'block');
-    $('.overlay').css('display', 'block');
+    $('.overlay-bcg').css('display', 'block');
 };
+
+$(document).mouseup(function (e) {
+    var container = $('.overlay-bcg, .popUp-kved');
+    if (container.has(e.target).length === 0){
+        container.css('display', 'none');
+    }
+});
 
 function closePopUpKved() {
     $('.popUp-kved').css('display', 'none');
-    $('.overlay').css('display', 'none');
+    $('.overlay-bcg').css('display', 'none');
+};
+
+function addPopUpKved() {
+    $('.popUp-kved').css('display', 'none');
+    $('.overlay-bcg').css('display', 'none');
 };
 
 // Subscribe Popup
@@ -195,16 +209,23 @@ function subscribeSuggest() {
     $('.overlay').css('display', 'none');
 };
 
-// Pop up Date
-function openPopUpDate() {
-    $('.popUp-date').css('display', 'block');
-    $('.overlay').css('display', 'block');
-};
+$(document).mouseup(function (e) {
+    var container = $('.popUp-subscribe, .overlay');
+    if (container.has(e.target).length === 0){
+        container.css('display', 'none');
+    }
+});
 
-function closePopUpDate() {
-    $('.popUp-date').css('display', 'none');
-    $('.overlay').css('display', 'none');
-};
+// $(document).mouseup(function (e) {
+//     var container = $('.overlay-bcg, .popUp-date');
+//     var trigger = $('.custom-select-trigger');
+//     if (container.has(e.target).length === 0){
+//         container.css('display', 'none');
+//     } else if {
+//          trigger.has(e.target).length === 0 {
+//         container.css('display', 'block');
+//     }
+// });
 
 // Pop up Creator portfolio
 function closePopUpCreator() {
@@ -222,4 +243,24 @@ $(function () {
     var $nav = $(".global-nav");
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
   });
+});
+
+
+// Img upload's clear button's
+$('button#delLogo').on('click', function() {
+    $("#file_input1").val('');
+    $("#drop_zone1 > .preview-container").empty();
+    $("#drop_zone1 > .preview-container").remove();
+});
+
+$('button#delPhoto').on('click', function() {
+    $("#file_input2").val('');
+    $("#drop_zone2 > .preview-container").empty();
+    $("#drop_zone2 > .preview-container").remove();
+});
+
+$('button#delPortfolio').on('click', function() {
+    $("#file_input3").val('');
+    $("#drop_zone3 > .preview-container").empty();
+    $("#drop_zone3 > .preview-container").remove();
 });

@@ -142,7 +142,7 @@
                     </div>
                     <h1>Компания ремесленной палаты Украины</h1>
                     <div class="subscribe-form">
-                        <form action="">
+                        <form action="" id="subscribeForm">
                             <input type="text" placeholder="E-mail" class="subscribe-input" required>
                             <button type="submit" name="button" id="subscribeBtn">Підписатися</button>
                         </form>
@@ -174,6 +174,10 @@
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="assets/slick/slick.js"></script>
 <script src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script>
+    $("#subscribeForm").validate();
+</script>
 <script>
 jQuery(document).ready(function($) {
     new WOW().init();
