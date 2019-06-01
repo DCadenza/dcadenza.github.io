@@ -6312,11 +6312,13 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
   font-size: 30px;
   line-height: 27px;
   color: #232323;
+  margin-bottom: 20px;
 }
 .new-creator-content .top-content-right h4 span {
   color: #ec912e;
 }
 .new-creator-content .top-content-right .header-underline {
+  display: none;
   margin-top: 1px;
 }
 .new-creator-content .top-content-right .header-underline hr.short-line {
@@ -7660,6 +7662,7 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
     margin-bottom: 5px;
   }
   .new-creator-content .top-content-right .header-underline {
+    display: block;
     margin-top: 0px;
   }
   .new-creator-content .top-content-right p {
@@ -8532,7 +8535,7 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
   color: #ec912e;
 }
 .new-partner-content .top-content .header-underline {
-  margin-top: 1px;
+  margin-top: 31px;
 }
 .new-partner-content .top-content .header-underline hr.short-line {
   display: inline-block;
