@@ -464,7 +464,9 @@ h3 {
     height: 400px;
     margin-bottom: 40px;
     background-attachment: local;
-    background-position: 100% 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
   }
   .china-main-content .text-container h1 {
     padding-top: 80px;
@@ -565,7 +567,9 @@ h3 {
     height: 400px;
     margin-bottom: 40px;
     background-attachment: local;
-    background-position: 100% 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
   }
   .japan-main-content .text-container h2 {
     padding-top: 80px;
@@ -673,7 +677,9 @@ h3 {
     height: 400px;
     margin-bottom: 40px;
     background-attachment: local;
-    background-position: 100% 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
   }
   .low-main-content .text-container h2 {
     padding-top: 80px;
@@ -1001,7 +1007,7 @@ h3 {
 }
 .about-us-content .text-content h3.last-line {
   line-height: 40px;
-  padding-top: 60px;
+  padding-top: 25px;
   padding-bottom: 30px;
 }
 .about-us-content .text-content h4 {
@@ -1258,6 +1264,10 @@ h3 {
     padding-top: 90px;
   }
   .china-content .header-bcg {
+    background-attachment: local;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
     margin-bottom: 40px;
     height: 200px;
   }
@@ -1459,6 +1469,10 @@ h3 {
     width: 100%;
   }
   .japan-content .header-bcg {
+    background-attachment: local;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
     margin-bottom: 40px;
     height: 200px;
   }
@@ -1718,6 +1732,10 @@ h3 {
     margin-bottom: 40px;
   }
   .low-help-content .header-bcg {
+    background-attachment: local;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
     margin-bottom: 40px;
     height: 200px;
   }
@@ -1861,6 +1879,10 @@ h3 {
   .res-per-content .header-bcg {
     margin-bottom: 40px;
     height: 200px;
+    background-attachment: local;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
   }
   .res-per-content .header-bcg .text-container h1 {
     padding-top: 60px;
@@ -2179,9 +2201,12 @@ h3 {
     padding-top: 90px;
   }
   .news-header-content .header-bcg {
+    background-attachment: local;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
     margin-bottom: 40px;
     height: 200px;
-    background-position: 50% 60%;
   }
   .news-header-content .header-bcg .text-container h1 {
     padding-top: 60px;
@@ -2251,7 +2276,10 @@ h3 {
   .contacts-header-content .header-bcg {
     margin-bottom: 40px;
     height: 200px;
-    background-position: 30% 50%;
+    background-attachment: local;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
   }
   .contacts-header-content .header-bcg .text-container h1 {
     padding-top: 80px;
