@@ -1118,6 +1118,10 @@ h3 {
   line-height: 24px;
   color: #232323;
 }
+.china-content .accordion {
+  max-width: 960px;
+  margin: 0 auto;
+}
 .china-content .accordion .accordion-item {
   margin-bottom: 5px;
 }
@@ -1195,40 +1199,81 @@ h3 {
   margin-bottom: 20px;
   margin-top: 20px;
 }
+.china-content .accordion .accordion-item .accordion-hidden .text-top .bold-text {
+  font-weight: 900;
+}
 .china-content .accordion .accordion-item .accordion-hidden .text-top p {
   font-family: 'HelveticaNeueCyr-Roman', sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #232323;
+  text-align: justify;
 }
 .china-content .accordion .accordion-item .accordion-hidden .text-top p.italic {
   font-style: italic;
+  text-align: justify;
+  font-size: 16px;
+}
+.china-content .accordion .accordion-item .accordion-hidden .text-top span.marked {
+  display: block;
+  position: absolute;
+  width: 15px;
+  font-size: 35px;
+  left: 90px;
+  margin-top: -8px;
+  color: #49596D;
 }
 .china-content .accordion .accordion-item .accordion-hidden .text-top ul {
   margin: 0px;
 }
 .china-content .accordion .accordion-item .accordion-hidden .text-top ul li {
   font-size: 18px;
-  line-height: 40px;
+  line-height: 26px;
   text-align: left;
   font-family: 'HelveticaNeueCyr-Roman', sans-serif;
   list-style-type: disc;
+  text-align: justify;
 }
 .china-content .accordion .accordion-item .accordion-hidden .text-top ul li.italic p {
   font-style: italic;
+  text-align: justify;
+  font-size: 16px;
+  border: 1px solid #49596D;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background: #EEEEEE;
+}
+.china-content .accordion .accordion-item .accordion-hidden .text-top p.box {
+  font-style: italic;
+  text-align: justify;
+  font-size: 16px;
+  border: 1px solid #49596D;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background: #EEEEEE;
 }
 .china-content .accordion .accordion-item .accordion-hidden .text-top ul.num li {
   list-style-type: decimal;
+  text-align: justify;
 }
 .china-content .accordion .accordion-item .accordion-hidden .text-top ul.num li ul.dotted-italic li {
   list-style-type: disc;
   font-style: italic;
+  text-align: justify;
+}
+.china-content .accordion .accordion-item .accordion-hidden .text-top ul.num li ul.dotted-italic li.normal {
+  list-style-type: none;
+  font-style: normal;
+  font-weight: 900;
 }
 .china-content .accordion .accordion-item .accordion-hidden p.additional-info {
   font-family: 'HelveticaNeueCyr-Italic', sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 24px;
   color: #232323;
+  text-align: justify;
 }
 .china-content .accordion .accordion-item .accordion-hidden table {
   width: 100%;
@@ -1348,6 +1393,10 @@ h3 {
   line-height: 24px;
   color: #232323;
 }
+.japan-content .accordion {
+  max-width: 960px;
+  margin: 0 auto;
+}
 .japan-content .accordion .accordion-item {
   margin-bottom: 5px;
 }
@@ -1414,6 +1463,7 @@ h3 {
   font-size: 18px;
   line-height: 24px;
   color: #232323;
+  text-align: justify;
 }
 .japan-content .accordion .accordion-item .accordion-hidden .text-top ul {
   margin: 0px;
@@ -1424,15 +1474,18 @@ h3 {
   text-align: left;
   font-family: 'HelveticaNeueCyr-Roman', sans-serif;
   list-style-type: disc;
+  text-align: justify;
 }
 .japan-content .accordion .accordion-item .accordion-hidden .text-top ul.num li {
   list-style-type: decimal;
+  text-align: justify;
 }
 .japan-content .accordion .accordion-item .accordion-hidden p.additional-info {
   font-family: 'HelveticaNeueCyr-Italic', sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #232323;
+  text-align: justify;
 }
 .japan-content .accordion .accordion-item .accordion-hidden table {
   width: 100%;
@@ -1541,12 +1594,14 @@ h3 {
   font-size: 18px;
   line-height: 24px;
   color: #232323;
+  text-align: justify;
 }
 .low-help-content .header-text h4 {
   font-family: 'HelveticaNeueCyr-Bold', sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #232323;
+  text-align: justify;
 }
 .low-help-content .accordion .accordion-item {
   margin-bottom: 5px;
@@ -1608,12 +1663,14 @@ h3 {
 .low-help-content .accordion .accordion-item .accordion-hidden .text-top {
   margin-bottom: 20px;
   margin-top: 20px;
+  text-align: justify;
 }
 .low-help-content .accordion .accordion-item .accordion-hidden .text-top p {
   font-family: 'HelveticaNeueCyr-Roman', sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #232323;
+  text-align: justify;
 }
 .low-help-content .accordion .accordion-item .accordion-hidden .text-top ul {
   margin: 0px;
@@ -1624,15 +1681,18 @@ h3 {
   text-align: left;
   font-family: 'HelveticaNeueCyr-Roman', sans-serif;
   list-style-type: disc;
+  text-align: justify;
 }
 .low-help-content .accordion .accordion-item .accordion-hidden .text-top ul.num li {
   list-style-type: decimal;
+  text-align: justify;
 }
 .low-help-content .accordion .accordion-item .accordion-hidden p.additional-info {
   font-family: 'HelveticaNeueCyr-Italic', sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #232323;
+  text-align: justify;
 }
 .low-help-content .accordion .accordion-item .accordion-hidden table {
   width: 100%;
@@ -1670,13 +1730,18 @@ h3 {
   .low-help-content .header-text p,
   .china-content .header-text p,
   .japan-content .header-text p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 30px;
+  }
+  .low-help-content .accordion .accordion-item .accordion-hidden .text-top,
+  .china-content .accordion .accordion-item .accordion-hidden .text-top,
+  .japan-content .accordion .accordion-item .accordion-hidden .text-top {
+    margin-bottom: 0px;
   }
   .low-help-content .accordion .accordion-item .accordion-hidden .text-top p,
   .china-content .accordion .accordion-item .accordion-hidden .text-top p,
   .japan-content .accordion .accordion-item .accordion-hidden .text-top p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 30px;
   }
   .low-help-content .accordion .accordion-item .accordion-hidden .text-top ul.num li,
@@ -1688,6 +1753,18 @@ h3 {
   .low-help-content .accordion .accordion-item .accordion-hidden .text-top ul li,
   .china-content .accordion .accordion-item .accordion-hidden .text-top ul li,
   .japan-content .accordion .accordion-item .accordion-hidden .text-top ul li {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .low-help-content .accordion .accordion-item .accordion-hidden .text-top ul li.italic p,
+  .china-content .accordion .accordion-item .accordion-hidden .text-top ul li.italic p,
+  .japan-content .accordion .accordion-item .accordion-hidden .text-top ul li.italic p {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .low-help-content .accordion .accordion-item .accordion-hidden .text-top p.italic,
+  .china-content .accordion .accordion-item .accordion-hidden .text-top p.italic,
+  .japan-content .accordion .accordion-item .accordion-hidden .text-top p.italic {
     font-size: 14px;
     line-height: 30px;
   }
@@ -1745,6 +1822,9 @@ h3 {
     font-size: 50px;
     font-family: 'HelveticaNeueCyr-Bold', sans-serif;
     line-height: 90px;
+  }
+  .low-help-content .header-text h4 {
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 864px) {
@@ -2750,6 +2830,7 @@ h3 {
   font-size: 18px;
   line-height: 24px;
   color: #232323;
+  text-align: justify;
 }
 .article .container-all .content-block-grid .content-block h4 {
   font-family: 'HelveticaNeueCyr-Bold', sans-serif;
@@ -2762,12 +2843,14 @@ h3 {
   font-size: 18px;
   line-height: 24px;
   color: #232323;
+  text-align: justify;
 }
 .article .container-all .content-block-grid .content-block h4.cursiv {
   font-family: 'HelveticaNeueCyr-Italic', sans-serif;
   font-size: 20px;
   line-height: 24px;
   color: #232323;
+  text-align: justify;
 }
 .article .container-all a.source {
   cursor: pointer;
