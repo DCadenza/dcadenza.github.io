@@ -15,7 +15,6 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" href="images/header-logo.svg">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/animate.css">
     <link rel="stylesheet" type="text/css" href="assets/jquery-ui.css">
 </head>
 
@@ -42,12 +41,12 @@
     </div>
     <div class="container-inside">
         <div class="top-container">
-            <button class="mob-nav-toggle wow fadeInRight" id="toggle-menu">
+            <button class="mob-nav-toggle" id="toggle-menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-        <div class="logo wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+        <div class="logo">
             <a href="index.html"><svg
              xmlns="http://www.w3.org/2000/svg"
              xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -66,7 +65,7 @@
 <!-- Main navigation -->
         <div class="nav">
             <div class="nav-container">
-                <div class="nav-content wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.5s">
+                <div class="nav-content">
                     <ul>
                         <li><a href="about-us.html">О нас</a></li>
                         <li><a href="become-a-partner.html">Стать партнером</a></li>
@@ -79,8 +78,8 @@
                 </div>
             </div>
         </div>
-        <div class="lang wow fadeInRight" data-wow-duration="2s" data-wow-delay="1.2s">
-            <select name="sources" id="language" class="custom-select sources" placeholder="UA">
+        <div class="lang">
+            <select name="sources" id="language" class="custom-select sources langClose" placeholder="UA">
                 <option value="UA">UA</option>
                 <option value="RU">RU</option>
                 <option value="EN">EN</option>
@@ -105,31 +104,11 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="logo-top">
-                                    <svg
-                                     xmlns="http://www.w3.org/2000/svg"
-                                     xmlns:xlink="http://www.w3.org/1999/xlink"
-                                     width="135px" height="20px">
-                                    <path fill-rule="evenodd"  fill="rgb(236, 145, 46)"
-                                     d="M54.662,15.084 L54.662,17.673 L44.177,17.673 L44.177,2.032 L54.640,2.032 L54.640,4.642 L47.400,4.642 L47.400,8.370 L53.587,8.370 L53.587,10.873 L47.400,10.873 L47.400,15.084 L54.662,15.084 ZM35.723,17.673 L33.177,7.210 L30.631,17.673 L27.387,17.673 L23.917,2.032 L27.129,2.032 L29.246,13.139 L31.824,2.032 L34.552,2.032 L37.120,13.161 L39.225,2.032 L42.437,2.032 L38.967,17.673 L35.723,17.673 Z"/>
-                                    <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                                     d="M134.970,15.084 L134.970,17.673 L124.486,17.673 L124.486,2.032 L134.949,2.032 L134.949,4.642 L127.708,4.642 L127.708,8.370 L133.896,8.370 L133.896,10.873 L127.708,10.873 L127.708,15.084 L134.970,15.084 ZM117.858,17.673 L114.635,17.673 L114.635,4.642 L109.909,4.642 L109.909,2.032 L122.649,2.032 L122.649,4.642 L117.858,4.642 L117.858,17.673 ZM107.277,17.673 L106.192,14.450 L100.542,14.450 L99.467,17.673 L96.041,17.673 L101.863,2.032 L104.849,2.032 L110.704,17.673 L107.277,17.673 ZM103.356,5.985 L101.412,11.840 L105.322,11.840 L103.356,5.985 ZM84.987,2.032 L95.450,2.032 L95.450,4.642 L88.209,4.642 L88.209,8.370 L94.397,8.370 L94.397,10.873 L88.209,10.873 L88.209,15.084 L95.471,15.084 L95.471,17.673 L84.987,17.673 L84.987,2.032 ZM76.737,11.947 L74.169,11.947 L74.169,17.673 L70.947,17.673 L70.947,2.032 L76.758,2.032 C78.606,2.032 80.031,2.444 81.034,3.267 C82.036,4.091 82.538,5.255 82.538,6.759 C82.538,7.826 82.307,8.716 81.845,9.428 C81.383,10.141 80.683,10.708 79.745,11.131 L83.128,17.522 L83.128,17.673 L79.669,17.673 L76.737,11.947 ZM78.687,5.276 C78.268,4.854 77.625,4.642 76.758,4.642 L74.169,4.642 L74.169,9.337 L76.769,9.337 C77.578,9.337 78.205,9.131 78.649,8.719 C79.093,8.307 79.315,7.740 79.315,7.016 C79.315,6.279 79.105,5.699 78.687,5.276 ZM64.786,5.142 C64.303,4.687 63.567,4.460 62.579,4.460 C61.504,4.460 60.700,4.845 60.167,5.615 C59.633,6.384 59.359,7.579 59.345,9.197 L59.345,10.379 C59.345,12.069 59.601,13.304 60.113,14.085 C60.625,14.865 61.433,15.256 62.536,15.256 C63.531,15.256 64.274,15.028 64.765,14.574 C65.255,14.119 65.536,13.415 65.608,12.463 L68.831,12.463 C68.709,14.146 68.088,15.471 66.967,16.437 C65.846,17.404 64.369,17.887 62.536,17.887 C60.530,17.887 58.953,17.213 57.804,15.863 C56.654,14.513 56.080,12.660 56.080,10.304 L56.080,9.347 C56.080,7.844 56.344,6.519 56.875,5.373 C57.404,4.227 58.162,3.348 59.146,2.736 C60.131,2.123 61.275,1.817 62.579,1.817 C64.383,1.817 65.837,2.301 66.940,3.267 C68.043,4.234 68.680,5.591 68.852,7.339 L65.629,7.339 C65.551,6.329 65.270,5.597 64.786,5.142 Z"/>
-                                    <path fill-rule="evenodd"  fill="rgb(236, 145, 46)"
-                                     d="M21.428,7.022 L17.961,7.022 L16.457,12.982 L18.974,12.982 C19.722,12.982 20.227,13.585 20.101,14.328 C19.976,15.072 19.268,15.675 18.521,15.675 L15.778,15.675 L14.998,18.766 C14.821,19.469 14.140,20.001 13.443,20.001 C13.405,20.001 13.367,20.000 13.329,19.996 C12.595,19.935 12.150,19.284 12.337,18.543 L13.061,15.675 L7.076,15.675 L6.297,18.766 C6.119,19.469 5.438,20.001 4.741,20.001 C4.703,20.001 4.665,20.000 4.628,19.996 C3.893,19.935 3.449,19.284 3.636,18.543 L4.359,15.675 L1.117,15.675 C0.369,15.675 -0.135,15.072 -0.010,14.328 C0.115,13.585 0.823,12.982 1.571,12.982 L5.038,12.982 L6.542,7.022 L4.025,7.022 C3.277,7.022 2.772,6.419 2.898,5.675 C3.023,4.932 3.731,4.329 4.478,4.329 L7.221,4.329 L8.001,1.237 C8.188,0.496 8.934,-0.055 9.670,0.007 C10.404,0.069 10.849,0.719 10.662,1.461 L9.938,4.329 L15.923,4.329 L16.702,1.237 C16.889,0.496 17.635,-0.055 18.371,0.007 C19.106,0.069 19.550,0.719 19.363,1.461 L18.640,4.329 L21.882,4.329 C22.630,4.329 23.134,4.932 23.009,5.675 C22.884,6.419 22.176,7.022 21.428,7.022 ZM9.287,7.057 L7.756,12.982 L13.714,12.982 L15.245,7.057 L9.287,7.057 Z"/>
-                                    </svg>
+                                    <span class="logo-orange">#WE</span><span class="logo-black">CREATE</span>
                                 </div>
                                 <div class="content-left">
                                     <div class="logo">
-                                        <svg
-                                         xmlns="http://www.w3.org/2000/svg"
-                                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                                         width="135px" height="20px">
-                                        <path fill-rule="evenodd"  fill="rgb(236, 145, 46)"
-                                         d="M54.662,15.084 L54.662,17.673 L44.177,17.673 L44.177,2.032 L54.640,2.032 L54.640,4.642 L47.400,4.642 L47.400,8.370 L53.587,8.370 L53.587,10.873 L47.400,10.873 L47.400,15.084 L54.662,15.084 ZM35.723,17.673 L33.177,7.210 L30.631,17.673 L27.387,17.673 L23.917,2.032 L27.129,2.032 L29.246,13.139 L31.824,2.032 L34.552,2.032 L37.120,13.161 L39.225,2.032 L42.437,2.032 L38.967,17.673 L35.723,17.673 Z"/>
-                                        <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                                         d="M134.970,15.084 L134.970,17.673 L124.486,17.673 L124.486,2.032 L134.949,2.032 L134.949,4.642 L127.708,4.642 L127.708,8.370 L133.896,8.370 L133.896,10.873 L127.708,10.873 L127.708,15.084 L134.970,15.084 ZM117.858,17.673 L114.635,17.673 L114.635,4.642 L109.909,4.642 L109.909,2.032 L122.649,2.032 L122.649,4.642 L117.858,4.642 L117.858,17.673 ZM107.277,17.673 L106.192,14.450 L100.542,14.450 L99.467,17.673 L96.041,17.673 L101.863,2.032 L104.849,2.032 L110.704,17.673 L107.277,17.673 ZM103.356,5.985 L101.412,11.840 L105.322,11.840 L103.356,5.985 ZM84.987,2.032 L95.450,2.032 L95.450,4.642 L88.209,4.642 L88.209,8.370 L94.397,8.370 L94.397,10.873 L88.209,10.873 L88.209,15.084 L95.471,15.084 L95.471,17.673 L84.987,17.673 L84.987,2.032 ZM76.737,11.947 L74.169,11.947 L74.169,17.673 L70.947,17.673 L70.947,2.032 L76.758,2.032 C78.606,2.032 80.031,2.444 81.034,3.267 C82.036,4.091 82.538,5.255 82.538,6.759 C82.538,7.826 82.307,8.716 81.845,9.428 C81.383,10.141 80.683,10.708 79.745,11.131 L83.128,17.522 L83.128,17.673 L79.669,17.673 L76.737,11.947 ZM78.687,5.276 C78.268,4.854 77.625,4.642 76.758,4.642 L74.169,4.642 L74.169,9.337 L76.769,9.337 C77.578,9.337 78.205,9.131 78.649,8.719 C79.093,8.307 79.315,7.740 79.315,7.016 C79.315,6.279 79.105,5.699 78.687,5.276 ZM64.786,5.142 C64.303,4.687 63.567,4.460 62.579,4.460 C61.504,4.460 60.700,4.845 60.167,5.615 C59.633,6.384 59.359,7.579 59.345,9.197 L59.345,10.379 C59.345,12.069 59.601,13.304 60.113,14.085 C60.625,14.865 61.433,15.256 62.536,15.256 C63.531,15.256 64.274,15.028 64.765,14.574 C65.255,14.119 65.536,13.415 65.608,12.463 L68.831,12.463 C68.709,14.146 68.088,15.471 66.967,16.437 C65.846,17.404 64.369,17.887 62.536,17.887 C60.530,17.887 58.953,17.213 57.804,15.863 C56.654,14.513 56.080,12.660 56.080,10.304 L56.080,9.347 C56.080,7.844 56.344,6.519 56.875,5.373 C57.404,4.227 58.162,3.348 59.146,2.736 C60.131,2.123 61.275,1.817 62.579,1.817 C64.383,1.817 65.837,2.301 66.940,3.267 C68.043,4.234 68.680,5.591 68.852,7.339 L65.629,7.339 C65.551,6.329 65.270,5.597 64.786,5.142 Z"/>
-                                        <path fill-rule="evenodd"  fill="rgb(236, 145, 46)"
-                                         d="M21.428,7.022 L17.961,7.022 L16.457,12.982 L18.974,12.982 C19.722,12.982 20.227,13.585 20.101,14.328 C19.976,15.072 19.268,15.675 18.521,15.675 L15.778,15.675 L14.998,18.766 C14.821,19.469 14.140,20.001 13.443,20.001 C13.405,20.001 13.367,20.000 13.329,19.996 C12.595,19.935 12.150,19.284 12.337,18.543 L13.061,15.675 L7.076,15.675 L6.297,18.766 C6.119,19.469 5.438,20.001 4.741,20.001 C4.703,20.001 4.665,20.000 4.628,19.996 C3.893,19.935 3.449,19.284 3.636,18.543 L4.359,15.675 L1.117,15.675 C0.369,15.675 -0.135,15.072 -0.010,14.328 C0.115,13.585 0.823,12.982 1.571,12.982 L5.038,12.982 L6.542,7.022 L4.025,7.022 C3.277,7.022 2.772,6.419 2.898,5.675 C3.023,4.932 3.731,4.329 4.478,4.329 L7.221,4.329 L8.001,1.237 C8.188,0.496 8.934,-0.055 9.670,0.007 C10.404,0.069 10.849,0.719 10.662,1.461 L9.938,4.329 L15.923,4.329 L16.702,1.237 C16.889,0.496 17.635,-0.055 18.371,0.007 C19.106,0.069 19.550,0.719 19.363,1.461 L18.640,4.329 L21.882,4.329 C22.630,4.329 23.134,4.932 23.009,5.675 C22.884,6.419 22.176,7.022 21.428,7.022 ZM9.287,7.057 L7.756,12.982 L13.714,12.982 L15.245,7.057 L9.287,7.057 Z"/>
-                                        </svg>
+                                        <span class="logo-orange">#WE</span><span class="logo-black">CREATE</span>
                                     </div>
 
                                     <div class="info">
@@ -174,7 +153,7 @@
 
                         <div class="top-block-inputs">
 
-                            <form enctype="multipart/form-data" id="creatorForm" method="get" action="">
+                            <form enctype="multipart/form-data" id="creatorForm" class="form-box" method="get" action="">
                                 <div class="wrapper">
 
                                     <span class="header">Не выводится на сайте (для формирование общеевропейской статистики и участия в международных выставках)</span>
@@ -184,14 +163,14 @@
                                             <input type="text" id="" name="name" aria-label="" placeholder="ФИО (полностью)" minlength="2" required>
                                         </div>
                                         <div class="top-inputs-2">
-                                            <input type="text" id="datepicker" name="date" aria-label="" placeholder="Дата рождения">
+                                            <input type="text" id="datepicker" name="date" aria-label="" placeholder="Дата рождения" autocomplete="off">
                                         </div>
                                     </div>
 
                                     <div class="select">
                                         <div class="select-field">
                                             <div class="form">
-                                                <select name="sources" id="" class="custom-select sources" placeholder="Орг. правовая форма">
+                                                <select name="sources" id="" class="custom-select sources low-form" placeholder="Орг. правовая форма">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
@@ -201,7 +180,10 @@
 
                                         <div class="select-field">
                                             <div class="form">
-                                                <select name="sources" id="" class="custom-select sources" placeholder="Кол-во сотрудников">
+                                                <select name="sources" id="" class="custom-select sources quantEmpl" placeholder="Кол-во сотрудников">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
@@ -211,7 +193,7 @@
 
                                         <div class="select-field">
                                             <div class="form">
-                                                <select name="sources" id="" class="custom-select sources" placeholder="Оборот">
+                                                <select name="sources" id="" class="custom-select sources typeSelect" placeholder="Оборот">
                                                     <option value="1">Строительный</option>
                                                     <option value="2">Пищевой</option>
                                                     <option value="3">Текстильный</option>
@@ -223,6 +205,9 @@
                                             <span class="alert-kved"></span>
                                             <div class="form">
                                                 <select name="sources" id="" class="custom-select sources" placeholder="КВЕД (основной)">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
@@ -291,11 +276,11 @@
                                     <div class="fields">
                                         <div class="addlogo">
                                             <div class="logoImg-content">
-                                                <button type=button class="clear" id="delLogo"><img src="images/close.svg" alt=""></button>
+                                                <button type=button class="clear-logo" id="delLogo" onclick="removeLogoBtn()"></button>
                                                 <div id="drop_zone1" class="drop-zone">
                                                     <div class="preview-container"></div>
                                                 </div>
-                                                <input id="file_input1" type="file" multiple accept="image/png, image/jpg" min-width="300" min-height="400">
+                                                <input id="file_input1" type="file" multiple accept="image/x-png,image/jpeg" min-width="300" min-height="200" onkeyup='checkParams()'>
                                             </div>
                                             <div class="file-upload-desc">
                                                 <span>Добавить логотип, изображение на белом фоне (мин. 300х200px) jpg, png</span>
@@ -305,11 +290,11 @@
 
                                         <div class="addPhoto">
                                             <div class="photoImg-content">
-                                                <button type=button class="clear" id="delPhoto"><img src="images/close.svg" alt=""></button>
+                                                <button type=button class="clear-portfolio" id="delPhoto" onclick="removePorfolioBtn()"></button>
                                                 <div id="drop_zone2" class="drop-zone">
                                                     <div class="preview-container"></div>
                                                 </div>
-                                                <input id="file_input2" accept="image/png, image/jpg" type="file" multiple min-width="1000" min-height="600">
+                                                <input id="file_input2" accept="image/x-png,image/jpeg" type="file" multiple min-width="1000" min-height="600">
                                             </div>
                                             <div class="photo-upload-desc">
                                                 <span>Добавить портфолио на белом фоне (мин. 1000х600px) jpg, png</span>
@@ -317,14 +302,13 @@
                                             </div>
                                         </div>
 
-
                                         <div class="addPortfolio">
                                             <div class="portfolioImg-content">
-                                                <button type=button class="clear" id="delPortfolio"><img src="images/close.svg" alt=""></button>
+                                                <button type=button class="clear-portfolio-big" id="delPortfolio" onclick="removeBigPorfolioBtn()"></button>
                                                 <div id="drop_zone3" class="drop-zone">
                                                     <div class="preview-container"></div>
                                                 </div>
-                                                <input id="file_input3" accept="image/png, image/jpg" type="file" multiple min-width="1000" min-height="600">
+                                                <input id="file_input3" accept="image/x-png,image/jpeg" type="file" multiple min-width="1000" min-height="600">
                                             </div>
                                             <div class="portfolio-upload-desc">
                                                 <span>Добавить портфолио на белом фоне (мин. 1000х600px) jpg, png</span>
@@ -342,13 +326,13 @@
 
                                 <div class="subscribe-check" style="margin-bottom: 0px;">
                                     <div class="subscribe-check-btn">
-                                        <input type="checkbox" name="" id="politics-agree" value="" checked class="subscribe-info-checkbox" required>
+                                        <input type="checkbox" name="" id="politics-agree" value="" checked class="subscribe-info-checkbox">
                                     </div>
-                                    <span class="subscribe-check-desc" id="politics-text">Согласен с политикой конфиденциальности<br/><span class="i-agree-alert">Подтвердите своё согласие</span></span>
+                                    <span class="subscribe-check-desc" id="politics-text">Согласен с политикой конфиденциальности</span>
 
                                 </div>
                                 <div class="submit-button">
-                                    <button type="submit">Отплатить взнос</button>
+                                    <button type="submit" id="submitCreator">Отплатить взнос</button>
                                 </div>
                                 <div class="additional-info"><span class="star">*</span><span>&nbsp;Согласен с политикой конфиденциальности, Этим я подтверждаю достоверность поданной мной информации</span></div>
                             </form>
@@ -414,15 +398,11 @@
 <script type="text/javascript" src="js/jquery-ui.js"></script>
 <script>
   $(function() {
-    $("#datepicker").datepicker();
+    $("#datepicker").datepicker({
+        todayHighlight: true,
+        orientation: "bottom left"
+    });
   });
-</script>
-<!-- Animation -->
-<script type="text/javascript" src="js/wow.min.js"></script>
-<script>
-    jQuery(document).ready(function($) {
-        new WOW().init();
-        });
 </script>
 <!-- Form validation -->
 <script type="text/javascript" src="js/jquery.validate.js"></script>
@@ -460,16 +440,15 @@ $("#file_input3").withDropZone("#drop_zone3", {
   },
 });
 </script>
-<!-- Checkout #1 -->
 <script type="text/javascript">
-    $('#info-text').click(function(){
+// Become a creator page Checkout #1
+$('#info-text').click(function(){
     var check = $('#info-agree');
     check.attr('checked', !check.attr('checked'));
 });
-</script>
-<!-- Checkout #2 -->
-<script type="text/javascript">
-    $('#politics-text').click(function(){
+
+// Become a creator page Checkout #2
+$('#politics-text').click(function(){
     var check = $('#politics-agree');
     check.attr('checked', !check.attr('checked'));
 });

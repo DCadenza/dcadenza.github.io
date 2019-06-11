@@ -1933,7 +1933,7 @@ button {
   font-family: 'Neighbor [RUS by Daymarius]';
 }
 .footer-content .logo svg {
-  width: 100%;
+  margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Neighbor [RUS by Daymarius]';
@@ -1945,6 +1945,10 @@ button {
   color: #ffffff;
   margin: 0px;
   padding-top: 20px;
+  padding-bottom: 43px;
+}
+.footer-content .subscribe-form {
+  position: relative;
 }
 .footer-content .subscribe-form form {
   display: -webkit-box;
@@ -1966,6 +1970,9 @@ button {
           align-items: center;
   height: 42px;
   margin-top: 43px;
+  position: relative;
+  max-width: 550px;
+  margin: 0 auto;
 }
 .footer-content .subscribe-form form .subscribe-input {
   width: 361px;
@@ -1994,6 +2001,8 @@ button {
   font-size: 14px;
   line-height: 27px;
   margin-top: 32px;
+  float: left;
+  left: 0px;
 }
 .footer-content .subscribe-form form button {
   width: 168px;
@@ -2107,6 +2116,9 @@ button {
   transition: all 0.3s ease;
 }
 @media only screen and (max-width: 595px) {
+  .footer-content h1 {
+    padding-bottom: 0px;
+  }
   .footer-content .logo {
     padding-top: 45px;
   }
@@ -3516,8 +3528,19 @@ button {
   padding-top: 31px;
   padding-left: 9px;
 }
-.thanks-content .card-content .logo img {
-  width: 257px;
+.thanks-content .card-content .logo span.logo-orange {
+  font-family: 'Roboto Medium', sans-serif;
+  font-size: 38px;
+  line-height: 37px;
+  color: #ec912e;
+  font-weight: 900;
+}
+.thanks-content .card-content .logo span.logo-black {
+  font-family: 'Roboto Medium', sans-serif;
+  font-size: 38px;
+  line-height: 37px;
+  color: #232323;
+  font-weight: 900;
 }
 .thanks-content .card-content .info {
   padding-top: 36px;
@@ -3546,6 +3569,9 @@ button {
 }
 .thanks-content .card-content .info span.desc {
   max-width: 282px;
+}
+.thanks-content .card-content .profile-id {
+  padding-bottom: 14px;
 }
 .thanks-content .card-content .profile-id-header {
   font-size: 16px;
@@ -3644,8 +3670,19 @@ button {
     padding-top: 0px;
     padding-bottom: 21px;
   }
-  .thanks-content .card-content .logo-top img {
-    width: 172px;
+  .thanks-content .card-content .logo-top span.logo-orange {
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    color: #ec912e;
+    font-weight: 900;
+  }
+  .thanks-content .card-content .logo-top span.logo-black {
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    color: #232323;
+    font-weight: 900;
   }
   .thanks-content .card-content .content-left {
     -webkit-box-ordinal-group: 4;
@@ -3663,6 +3700,9 @@ button {
         -ms-flex-order: 1;
             order: 1;
     padding-bottom: 24px;
+  }
+  .thanks-content .card-content .profile-id {
+    padding-bottom: 0px;
   }
   .thanks-content .card-content .profile-id-header {
     font-size: 16px;
@@ -5062,12 +5102,6 @@ button {
           flex-direction: column;
   position: relative;
 }
-.contacts-content-form-content form input:invalid {
-  border: 1px solid #e56868;
-}
-.contacts-content-form-content form input:valid {
-  border: 1px solid #e0e0e0;
-}
 .contacts-content-form-content form label {
   color: #e56868;
   font-size: 14px!important;
@@ -5194,21 +5228,8 @@ button {
 .contacts-content-form-content .subscribe-check-btn {
   margin-right: 15px;
 }
-.contacts-content-form-content .subscribe-check-btn input:invalid {
-  border: 1px solid #e56868;
-}
-.contacts-content-form-content .subscribe-check-btn input:valid {
-  border: 1px solid #e0e0e0;
-}
 .contacts-content-form-content .subscribe-check-btn label {
-  color: #e56868;
-  font-size: 14px!important;
-  font-family: 'Roboto Regular', sans-serif;
-  width: 100%;
-  left: 16px;
-  position: absolute;
-  margin-top: 25px;
-  line-height: 27px;
+  display: none!important;
 }
 .contacts-content-form-content .subscribe-check-btn .subscribe-info-checkbox {
   width: 25px;
@@ -5223,6 +5244,9 @@ button {
   background-color: #ffffff;
   border: 1px solid #ebebeb;
   font-style: normal;
+}
+.contacts-content-form-content .subscribe-check-btn .subscribe-info-checkbox .ifield {
+  border: 1px solid #e56868!important;
 }
 .contacts-content-form-content .subscribe-check-btn .subscribe-info-checkbox:checked:after {
   content: url('../images/contact-page/mark.svg');
@@ -5257,6 +5281,9 @@ button {
   transition: all 0.3s ease;
   cursor: pointer;
   color: #232323;
+}
+.contacts-content-form-content .ifield {
+  border: 1px solid #e56868!important;
 }
 .contacts-content-form-content .submit-button {
   margin-top: 33px;
@@ -5621,6 +5648,7 @@ button {
   }
   .projects-content-cards-grid .project-card .content-image img {
     width: 100%;
+    margin-right: 0px;
   }
   .projects-content-cards-grid .project-card .content-text {
     max-width: 666px;
@@ -5977,7 +6005,7 @@ button {
   display: none;
 }
 .mfp-content {
-  max-width: 1022px!important;
+  max-width: 1122px!important;
   max-height: 686px!important;
   background-color: transparent;
   width: 100%!important;
@@ -5998,7 +6026,7 @@ img.mfp-img {
 button.mfp-arrow.mfp-arrow-right.mfp-prevent-close {
   background-color: transparent;
   border: 1px solid #ffffff;
-  right: 10%;
+  right: 16%;
   outline: none;
   -web-kit-appearance: none;
   -moz-appearance: none;
@@ -6023,7 +6051,7 @@ button.mfp-arrow.mfp-arrow-right.mfp-prevent-close:hover {
 button.mfp-arrow.mfp-arrow-left.mfp-prevent-close {
   background-color: transparent;
   border: 1px solid #ffffff;
-  left: 10%;
+  left: 16%;
   outline: none;
   -web-kit-appearance: none;
   -moz-appearance: none;
@@ -6039,6 +6067,46 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close {
 button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
   background: #ec912e;
   border: 1px solid transparent;
+}
+@media only screen and (max-width: 2200px) {
+  button.mfp-arrow.mfp-arrow-right.mfp-prevent-close {
+    right: 20%;
+  }
+  button.mfp-arrow.mfp-arrow-left.mfp-prevent-close {
+    left: 20%;
+  }
+}
+@media only screen and (max-width: 1920px) {
+  button.mfp-arrow.mfp-arrow-right.mfp-prevent-close {
+    right: 15%;
+  }
+  button.mfp-arrow.mfp-arrow-left.mfp-prevent-close {
+    left: 15%;
+  }
+}
+@media only screen and (max-width: 1780px) {
+  button.mfp-arrow.mfp-arrow-right.mfp-prevent-close {
+    right: 12%;
+  }
+  button.mfp-arrow.mfp-arrow-left.mfp-prevent-close {
+    left: 12%;
+  }
+}
+@media only screen and (max-width: 1639px) {
+  button.mfp-arrow.mfp-arrow-right.mfp-prevent-close {
+    right: 10%;
+  }
+  button.mfp-arrow.mfp-arrow-left.mfp-prevent-close {
+    left: 10%;
+  }
+}
+@media only screen and (max-width: 1563px) {
+  button.mfp-arrow.mfp-arrow-right.mfp-prevent-close {
+    right: 5%;
+  }
+  button.mfp-arrow.mfp-arrow-left.mfp-prevent-close {
+    left: 5%;
+  }
 }
 .mfp-arrow-left:before {
   margin-left: 0px;
@@ -6247,15 +6315,20 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
   padding-left: 3px;
   text-align: left;
   padding-top: 31px;
-  font-family: 'Neighbor [RUS by Daymarius]';
-  font-size: 22px;
-  line-height: 37px;
 }
-.new-creator-content .top-content-left .card-content .logo svg {
-  font-family: 'Neighbor [RUS by Daymarius]';
-  font-size: 22px;
-  line-height: 37px;
-  width: 257px;
+.new-creator-content .top-content-left .card-content .logo span.logo-orange {
+  font-family: 'Roboto Medium', sans-serif;
+  font-size: 38px;
+  line-height: 38px;
+  color: #ec912e;
+  font-weight: 900;
+}
+.new-creator-content .top-content-left .card-content .logo span.logo-black {
+  font-family: 'Roboto Medium', sans-serif;
+  font-size: 38px;
+  line-height: 38px;
+  color: #232323;
+  font-weight: 900;
 }
 .new-creator-content .top-content-left .card-content .info {
   padding-top: 36px;
@@ -6290,6 +6363,7 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
 }
 .new-creator-content .top-content-left .card-content .profile-id {
   text-align: center;
+  padding-bottom: 14px;
 }
 .new-creator-content .top-content-left .card-content .profile-id-header {
   font-size: 16px;
@@ -6366,9 +6440,6 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
   margin-right: 23px;
   margin-top: 35px;
 }
-.new-creator-content .bottom-content .top-block-inputs form input:invalid {
-  border: 1px solid #e56868!important;
-}
 .new-creator-content .bottom-content .top-block-inputs form label#name-error {
   left: 1px;
   position: absolute;
@@ -6383,7 +6454,7 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
 .new-creator-content .bottom-content .top-block-inputs form label#tel-error {
   left: 1px;
   position: absolute;
-  z-index: 1000;
+  z-index: 10;
   font-family: 'Roboto Regular', sans-serif;
   color: #e56868;
   top: 38px;
@@ -6394,7 +6465,7 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
 .new-creator-content .bottom-content .top-block-inputs form label#e-mail-error {
   left: 1px;
   position: absolute;
-  z-index: 1000;
+  z-index: 10;
   font-family: 'Roboto Regular', sans-serif;
   color: #e56868;
   top: 38px;
@@ -6405,7 +6476,7 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
 .new-creator-content .bottom-content .top-block-inputs form label#town-error {
   left: 1px;
   position: absolute;
-  z-index: 1000;
+  z-index: 10;
   font-family: 'Roboto Regular', sans-serif;
   color: #e56868;
   top: 38px;
@@ -6465,7 +6536,7 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
   width: 19px;
   height: 19px;
   margin-top: 17px;
-  margin-right: 28px;
+  margin-right: 0px;
   display: block;
   position: absolute;
   right: 0px;
@@ -6860,8 +6931,8 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  padding-top: 2px;
-  padding-left: 5px;
+  padding-top: 5px;
+  padding-left: 8px;
 }
 .new-creator-content .bottom-content .top-block-inputs form .wrapper .select .select-field-plus button:hover {
   background-color: #232323;
@@ -6873,7 +6944,7 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
 .new-creator-content .bottom-content .top-block-inputs form .wrapper .select .select-field-plus button:hover:after {
   content: url(../images/input-plus-white.svg);
   position: absolute;
-  right: 16px;
+  right: 15px;
 }
 .new-creator-content .bottom-content .top-block-inputs form .wrapper .select .select-field-plus:after {
   text-align: left;
@@ -7059,6 +7130,7 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
   height: 182px;
   margin: 0px;
   padding: 0px;
+  padding-top: 5px!important;
   border: 1px solid #e0e0e0;
   -webkit-border-radius: 5px;
           border-radius: 5px;
@@ -7233,10 +7305,11 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
   height: 59px;
   width: 110px;
 }
-.new-creator-content .bottom-content .top-block-inputs form .add-image .fields .addlogo .logoImg-content button.clear {
+.new-creator-content .bottom-content .top-block-inputs form .add-image .fields .addlogo .logoImg-content button.clear-logo {
+  display: none;
   position: absolute;
   top: 10px;
-  left: 85px;
+  left: 95px;
   outline: none;
   border: 0px;
   background: none;
@@ -7244,6 +7317,42 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
+}
+.new-creator-content .bottom-content .top-block-inputs form .add-image .fields .addlogo .logoImg-content button.clear-logo:hover:after {
+  background-color: #ec912e;
+}
+.new-creator-content .bottom-content .top-block-inputs form .add-image .fields .addlogo .logoImg-content button.clear-logo:hover:before {
+  background-color: #ec912e;
+}
+.new-creator-content .bottom-content .top-block-inputs form .add-image .fields .addlogo .logoImg-content button.clear-logo:after {
+  display: block;
+  width: 13px;
+  height: 1px;
+  background-color: #232323;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  content: '';
+  position: absolute;
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  margin-left: -10px;
+}
+.new-creator-content .bottom-content .top-block-inputs form .add-image .fields .addlogo .logoImg-content button.clear-logo:before {
+  display: block;
+  width: 13px;
+  height: 1px;
+  background-color: #232323;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  content: '';
+  position: absolute;
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  margin-left: -10px;
 }
 .new-creator-content .bottom-content .top-block-inputs form .add-image .fields .addlogo .file-upload-desc span {
   display: block;
@@ -7267,6 +7376,10 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
   margin-bottom: 20px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .new-creator-content .bottom-content .top-block-inputs form .add-image .fields .addPhoto .photoImg-content {
   position: relative;
@@ -7347,17 +7460,54 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
   height: 59px;
   width: 110px;
 }
-.new-creator-content .bottom-content .top-block-inputs form .add-image .fields .addPhoto .photoImg-content button.clear {
+.new-creator-content .bottom-content .top-block-inputs form .add-image .fields .addPhoto .photoImg-content button.clear-portfolio {
+  display: none;
   position: absolute;
   top: 10px;
-  right: 0px;
-  z-index: 100000000;
+  left: 95px;
   outline: none;
   border: 0px;
   background: none;
+  z-index: 9999999999;
+  cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
-  cursor: pointer;
+}
+.new-creator-content .bottom-content .top-block-inputs form .add-image .fields .addPhoto .photoImg-content button.clear-portfolio:hover:after {
+  background-color: #ec912e;
+}
+.new-creator-content .bottom-content .top-block-inputs form .add-image .fields .addPhoto .photoImg-content button.clear-portfolio:hover:before {
+  background-color: #ec912e;
+}
+.new-creator-content .bottom-content .top-block-inputs form .add-image .fields .addPhoto .photoImg-content button.clear-portfolio:after {
+  display: block;
+  width: 13px;
+  height: 1px;
+  background-color: #232323;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  content: '';
+  position: absolute;
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  margin-left: -10px;
+}
+.new-creator-content .bottom-content .top-block-inputs form .add-image .fields .addPhoto .photoImg-content button.clear-portfolio:before {
+  display: block;
+  width: 13px;
+  height: 1px;
+  background-color: #232323;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  content: '';
+  position: absolute;
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  margin-left: -10px;
 }
 .new-creator-content .bottom-content .top-block-inputs form .add-image .fields .addPhoto .photo-upload-desc span {
   display: block;
@@ -7380,6 +7530,10 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
   -webkit-flex-wrap: nowrap;
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .new-creator-content .bottom-content .top-block-inputs form .add-image .fields .addPortfolio .portfolioImg-content {
   position: relative;
@@ -7460,17 +7614,56 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
   height: 59px;
   width: 110px;
 }
-.new-creator-content .bottom-content .top-block-inputs form .add-image .fields .addPortfolio .portfolioImg-content button.clear {
+.new-creator-content .bottom-content .top-block-inputs form .add-image .fields .addPortfolio .portfolioImg-content button.clear-portfolio-big {
+  display: none;
   position: absolute;
   top: 10px;
-  right: 0px;
-  z-index: 100000000;
+  left: 95px;
   outline: none;
   border: 0px;
   background: none;
+  z-index: 9999999999;
+  cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
-  cursor: pointer;
+  width: 13px;
+  height: 13px;
+}
+.new-creator-content .bottom-content .top-block-inputs form .add-image .fields .addPortfolio .portfolioImg-content button.clear-portfolio-big:hover:after {
+  background-color: #ec912e;
+}
+.new-creator-content .bottom-content .top-block-inputs form .add-image .fields .addPortfolio .portfolioImg-content button.clear-portfolio-big:hover:before {
+  background-color: #ec912e;
+}
+.new-creator-content .bottom-content .top-block-inputs form .add-image .fields .addPortfolio .portfolioImg-content button.clear-portfolio-big:after {
+  display: block;
+  width: 13px;
+  height: 1px;
+  background-color: #232323;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  content: '';
+  position: absolute;
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  margin-left: -10px;
+}
+.new-creator-content .bottom-content .top-block-inputs form .add-image .fields .addPortfolio .portfolioImg-content button.clear-portfolio-big:before {
+  display: block;
+  width: 13px;
+  height: 1px;
+  background-color: #232323;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  content: '';
+  position: absolute;
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  margin-left: -10px;
 }
 .new-creator-content .bottom-content .top-block-inputs form .add-image .fields .addPortfolio .portfolio-upload-desc span {
   display: block;
@@ -7538,11 +7731,6 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
   line-height: 27px;
   font-weight: normal;
 }
-.new-creator-content .bottom-content .top-block-inputs form .subscribe-check-desc span.i-agree-alert {
-  cursor: default;
-  font-size: 14px;
-  color: #e56868;
-}
 .new-creator-content .bottom-content .top-block-inputs form .submit-button {
   margin-top: 59px;
   text-align: center;
@@ -7583,6 +7771,9 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
   line-height: 27px;
   color: #232323;
   font-family: 'Roboto Regular', sans-serif;
+}
+.new-creator-content .bottom-content .top-block-inputs form .ifield {
+  border: 1px solid #e56868!important;
 }
 @media only screen and (max-width: 1200px) {
   .new-creator {
@@ -7650,6 +7841,7 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
   }
   .new-creator-content .top-content-left .card-content .profile-id {
     text-align: center;
+    padding-bottom: 0px;
   }
   .new-creator-content .top-content-right {
     margin-top: 0px;
@@ -7977,6 +8169,10 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
 .ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
   width: auto;
 }
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all table.ui-datepicker-calendar tr td .ui-state-default {
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
 .ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all table.ui-datepicker-calendar tr td .ui-state-default,
 .ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all table.ui-datepicker-calendar tr td .ui-widget-content.ui-state-default {
   background: #ffffff;
@@ -8007,7 +8203,8 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
   font-family: 'Roboto Regular', sans-serif;
 }
 .ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all table.ui-datepicker-calendar tr td.ui-datepicker-days-cell-over.ui-datepicker-today a {
-  color: #ec912e !important;
+  color: #232323;
+  background-color: #f6f6f6;
 }
 .ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all a.ui-datepicker-prev.ui-corner-all {
   background: none;
@@ -8021,6 +8218,11 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
   z-index: 10000000000;
   background-position: center;
 }
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all a.ui-datepicker-prev.ui-corner-all:hover {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
 .ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all a.ui-datepicker-next.ui-corner-all {
   padding-top: 20px;
 }
@@ -8031,6 +8233,11 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
           background-size: contain;
   z-index: 10000000000;
   background-position: center;
+}
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all a.ui-datepicker-next.ui-corner-all:hover {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
 }
 .ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all .ui-datepicker-title {
   padding: 10px;
@@ -8053,6 +8260,9 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
 .ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all .ui-datepicker-title select.ui-datepicker-month::-ms-expand {
   display: none;
 }
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all .ui-datepicker-title select.ui-datepicker-month:hover {
+  cursor: pointer;
+}
 .ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all .ui-datepicker-title select.ui-datepicker-year {
   width: 70px;
   outline: none;
@@ -8069,6 +8279,32 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
 }
 .ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all .ui-datepicker-title select.ui-datepicker-year::-ms-expand {
   display: none;
+}
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all .ui-datepicker-title select.ui-datepicker-year:hover {
+  cursor: pointer;
+}
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all .ui-datepicker-buttonpane.ui-widget-content button {
+  color: #a1a1a1!important;
+  opacity: 1!important;
+  padding-top: 5px;
+}
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all .ui-datepicker-buttonpane.ui-widget-content button:hover {
+  color: #232323 !important;
+}
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all .ui-datepicker-buttonpane.ui-widget-content button.ui-datepicker-close.ui-state-default.ui-priority-primary.ui-corner-all {
+  padding-top: 5px;
+}
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all .ui-datepicker-buttonpane.ui-widget-content button.ui-datepicker-close.ui-state-default.ui-priority-primary.ui-corner-all:hover {
+  color: #232323 !important;
+}
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all .ui-datepicker-title select.ui-datepicker-month {
+  font-weight: 900;
+}
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all .ui-datepicker-title select.ui-datepicker-year {
+  font-weight: 900;
+}
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+  padding-bottom: 3px;
 }
 @media only screen and (max-width: 736px) {
   .new-creator-content .bottom-content {
@@ -8103,8 +8339,19 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
     padding-top: 0px;
     padding-bottom: 21px;
   }
-  .new-creator-content .top-content-left .card-content .logo-top img {
-    width: 172px;
+  .new-creator-content .top-content-left .card-content .logo-top span.logo-orange {
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    color: #ec912e;
+    font-weight: 900;
+  }
+  .new-creator-content .top-content-left .card-content .logo-top span.logo-black {
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    color: #232323;
+    font-weight: 900;
   }
   .new-creator-content .top-content-left .card-content .content-left {
     -webkit-box-ordinal-group: 4;
@@ -8809,13 +9056,11 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
 .new-partner-content .bottom-content-inputs form .wrapper input::placeholder {
   color: #a1a1a1;
 }
-.new-partner-content .bottom-content-inputs form .wrapper input:invalid {
-  border: 1px solid #e56868!important;
-}
 .new-partner-content .bottom-content-inputs form .wrapper textarea {
   height: 182px;
   margin: 0px;
   padding: 0px;
+  padding-top: 5px!important;
   border: 1px solid #e0e0e0;
   -webkit-border-radius: 5px;
           border-radius: 5px;
@@ -8845,9 +9090,6 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
 }
 .new-partner-content .bottom-content-inputs form .wrapper textarea::placeholder {
   color: #a1a1a1;
-}
-.new-partner-content .bottom-content-inputs form .wrapper textarea:invalid {
-  border: 1px solid #e56868!important;
 }
 .new-partner-content .bottom-content-inputs form .wrapper input:focus {
   outline: none;
@@ -8901,7 +9143,7 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
   z-index: 10;
   font-family: 'Roboto Regular', sans-serif;
   color: #e56868;
-  top: 120px;
+  top: 144px;
   bottom: 0px;
   font-size: 14px;
   line-height: 27px;
@@ -9026,10 +9268,11 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
   height: 59px;
   width: 110px;
 }
-.new-partner-content .bottom-content-inputs form .wrapper .add-image .fields .addlogo .logoImg-content button.clear {
+.new-partner-content .bottom-content-inputs form .wrapper .add-image .fields .addlogo .logoImg-content button.clear-logo {
+  display: none;
   position: absolute;
   top: 10px;
-  left: 85px;
+  left: 95px;
   outline: none;
   border: 0px;
   background: none;
@@ -9037,6 +9280,44 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
+  width: 13px;
+  height: 13px;
+}
+.new-partner-content .bottom-content-inputs form .wrapper .add-image .fields .addlogo .logoImg-content button.clear-logo:hover:after {
+  background-color: #ec912e;
+}
+.new-partner-content .bottom-content-inputs form .wrapper .add-image .fields .addlogo .logoImg-content button.clear-logo:hover:before {
+  background-color: #ec912e;
+}
+.new-partner-content .bottom-content-inputs form .wrapper .add-image .fields .addlogo .logoImg-content button.clear-logo:after {
+  display: block;
+  width: 13px;
+  height: 1px;
+  background-color: #232323;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  content: '';
+  position: absolute;
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  margin-left: -10px;
+}
+.new-partner-content .bottom-content-inputs form .wrapper .add-image .fields .addlogo .logoImg-content button.clear-logo:before {
+  display: block;
+  width: 13px;
+  height: 1px;
+  background-color: #232323;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  content: '';
+  position: absolute;
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  margin-left: -10px;
 }
 .new-partner-content .bottom-content-inputs form .wrapper .add-image .fields .addlogo .file-upload-desc span {
   display: block;
@@ -9105,11 +9386,6 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
   font-weight: normal;
   cursor: pointer;
 }
-.new-partner-content .bottom-content-inputs form .wrapper .subscribe-check-desc span.i-agree-alert {
-  cursor: default;
-  font-size: 14px;
-  color: #e56868;
-}
 .new-partner-content .bottom-content-inputs form .wrapper .submit-button {
   margin: 0 auto;
   margin-top: 43px;
@@ -9136,6 +9412,9 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close:hover {
 .new-partner-content .bottom-content-inputs form .wrapper .submit-button button:hover {
   background-color: #232323;
   color: #ffffff;
+}
+.new-partner-content .bottom-content-inputs form .ifield {
+  border: 1px solid #e56868!important;
 }
 @media only screen and (max-width: 1175px) {
   .new-partner {

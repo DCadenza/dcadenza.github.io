@@ -16,7 +16,6 @@
     <link rel="stylesheet" type="text/css" href="assets/slick/slick.css">
     <link rel="shortcut icon" href="images/header-logo.svg">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/animate.css">
 </head>
 
 <body>
@@ -42,12 +41,12 @@
     </div>
     <div class="container-inside">
         <div class="top-container">
-            <button class="mob-nav-toggle wow fadeInRight" id="toggle-menu">
+            <button class="mob-nav-toggle" id="toggle-menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-        <div class="logo wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+        <div class="logo">
             <a href="index.html"><svg
              xmlns="http://www.w3.org/2000/svg"
              xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -66,7 +65,7 @@
 <!-- Main navigation -->
         <div class="nav">
             <div class="nav-container">
-                <div class="nav-content wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.5s">
+                <div class="nav-content">
                     <ul>
                         <li><a href="about-us.html">О нас</a></li>
                         <li><a href="become-a-partner.html">Стать партнером</a></li>
@@ -79,7 +78,7 @@
                 </div>
             </div>
         </div>
-        <div class="lang wow fadeInRight" data-wow-duration="2s" data-wow-delay="1.2s">
+        <div class="lang">
             <select name="sources" id="language" class="custom-select sources" placeholder="UA">
                 <option value="UA">UA</option>
                 <option value="RU">RU</option>
@@ -142,7 +141,7 @@
                 <div class="contacts-content-form">
                     <h4>Отправить сообщение</h4>
                     <div class="contacts-content-form-content">
-                        <form id="contactForm" method="get" action="" enctype="form-data">
+                        <form id="contactForm" method="get" action="" class="field-box" enctype="form-data">
                             <div class="inline-input">
                                 <input type="text" name="name" placeholder="Имя" class="input-name" minlength="2" pattern="[а-яА-ЯёЁ]{2,64}" required>
                                 <input type="tel" name="phone" placeholder="Телефон" class="input-phone" required>
@@ -153,10 +152,10 @@
                                 <div class="subscribe-check-btn">
                                     <input type="checkbox" name="checkbox" id="agree" value="0" class="subscribe-info-checkbox" required />
                                 </div>
-                                <span class="subscribe-check-desc" ><span id="agree-text">Согласен с</span><a href="#"> политикой конфиденциальности</a></span>
+                                <span class="subscribe-check-desc"><span id="agree-text">Согласен с</span><a href="#"> политикой конфиденциальности</a></span>
                             </div>
                             <div class="submit-button">
-                                <button type="submit" name="button">Отправить</button>
+                                <button type="submit" id="submitContacts"name="button">Отправить</button>
                             </div>
                         </form>
 
@@ -218,12 +217,6 @@
 
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="assets/slick/slick.js"></script>
-<script src="js/wow.min.js"></script>
-<script>
-    jQuery(document).ready(function($) {
-        new WOW().init();
-        });
-</script>
 <script>
     $('#agree-text').click(function(){
     var check = $('#agree');

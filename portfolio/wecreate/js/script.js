@@ -216,17 +216,6 @@ $(document).mouseup(function (e) {
     }
 });
 
-// $(document).mouseup(function (e) {
-//     var container = $('.overlay-bcg, .popUp-date');
-//     var trigger = $('.custom-select-trigger');
-//     if (container.has(e.target).length === 0){
-//         container.css('display', 'none');
-//     } else if {
-//          trigger.has(e.target).length === 0 {
-//         container.css('display', 'block');
-//     }
-// });
-
 // Pop up Creator portfolio
 function closePopUpCreator() {
     $(".popUp-slider-creator").css('display', 'none');
@@ -263,4 +252,96 @@ $('button#delPortfolio').on('click', function() {
     $("#file_input3").val('');
     $("#drop_zone3 > .preview-container").empty();
     $("#drop_zone3 > .preview-container").remove();
+});
+
+
+// Become a creator error input
+$('document').ready(function() {
+    $('#submitCreator').on('click', function() {
+        $('input[required]').addClass('ifield');
+  });
+});
+
+// Become a partner error input
+$('document').ready(function() {
+    $('#submitPartner').on('click', function() {
+        $('input[required]').addClass('ifield');
+    });
+});
+
+$('document').ready(function() {
+    $('#submitPartner').on('click', function() {
+        $('textarea[required]').addClass('ifield');
+    });
+});
+
+// Contacts error input
+$('document').ready(function() {
+    $('#submitContacts').on('click', function() {
+        $('input[required]').addClass('ifield');
+    });
+});
+
+$('document').ready(function() {
+    $('#submitContacts').on('click', function() {
+        $('textarea[required]').addClass('ifield');
+    });
+});
+
+$('document').ready(function() {
+    $('#submitContacts').on('click', function() {
+        $('textarea[required]').addClass('ifield');
+    });
+});
+
+// Become a creator page Input file clear buttons
+$('form input#file_input1[type=file]').on('change', function() {
+    $('.clear-logo').css('display', 'block');
+});
+function removeLogoBtn() {
+    $('.clear-logo').hide();
+}
+
+$('form input#file_input2[type=file]').on('change', function() {
+    $('.clear-portfolio').css('display', 'block');
+});
+function removePorfolioBtn() {
+    $('.clear-portfolio').hide();
+}
+
+$('form input#file_input3[type=file]').on('change', function() {
+    $('.clear-portfolio-big').css('display', 'block');
+});
+function removeBigPorfolioBtn() {
+    $('.clear-portfolio-big').hide();
+
+}
+
+// Close selects
+$(document).mouseup(function (e) {
+    var container = $(".low-form");
+    if (container.has(e.target).length === 0) {
+        container.removeClass("opened");
+    }
+});
+
+$(document).mouseup(function (e) {
+    var container = $(".quantEmpl");
+    if (container.has(e.target).length === 0) {
+        container.removeClass("opened");
+    }
+});
+
+$(document).mouseup(function (e) {
+    var container = $(".typeSelect");
+    if (container.has(e.target).length === 0) {
+        container.removeClass("opened");
+    }
+});
+
+$(document).mouseup(function (e) {
+    var container = $(".langClose");
+    if (container.has(e.target).length === 0) {
+        container.removeClass("opened");
+    }
 });
