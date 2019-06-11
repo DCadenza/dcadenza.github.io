@@ -340,7 +340,21 @@ $(document).mouseup(function (e) {
 });
 
 $(document).mouseup(function (e) {
+    var container = $(".kvedSelect");
+    if (container.has(e.target).length === 0) {
+        container.removeClass("opened");
+    }
+});
+
+$(document).mouseup(function (e) {
     var container = $(".langClose");
+    if (container.has(e.target).length === 0) {
+        container.removeClass("opened");
+    }
+});
+
+$(document).mouseup(function (e) {
+    var container = $(".typeOf");
     if (container.has(e.target).length === 0) {
         container.removeClass("opened");
     }
