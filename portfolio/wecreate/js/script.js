@@ -254,7 +254,6 @@ $('button#delPortfolio').on('click', function() {
     $("#drop_zone3 > .preview-container").remove();
 });
 
-
 // Become a creator error input
 $('document').ready(function() {
     $('#submitCreator').on('click', function() {
