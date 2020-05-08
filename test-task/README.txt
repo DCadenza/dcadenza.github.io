@@ -1,10 +1,12 @@
 Тестовое задание для wwwest.solutions
 Автор Дмитрий Голубцов
 Количество дней на выполнение - 5
+
 Вебстраница расположена по адресу: 
 http://www.dmitriiholubtsov.tk/portfolio/test-task/index.html
 
 GitHub Репозиторий (исходные файлы):
+https://github.com/DCadenza/dcadenza.github.io/tree/master/test-task
 
 ___________________________________________________
 
