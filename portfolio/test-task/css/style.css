@@ -181,7 +181,7 @@ p, h2 {
   .mob-nav-container-content ul li ul li:first-child {
     padding-right: 10px; }
   .mob-nav-container-content ul li ul li a {
-    border-bottom: 0; }
+    border-bottom: 0 !important; }
 
 .mob-nav-container-content ul li a {
   text-decoration: none;
@@ -373,6 +373,16 @@ button.mob-nav-toggle span {
         letter-spacing: 0.01em;
         text-transform: uppercase;
         color: #1D1C21; }
+        .awards .awards-items .item .name h2 {
+          font-family: "Playfair Display SC Bold", sans-serif;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 24px;
+          line-height: 32px;
+          letter-spacing: 0.01em;
+          text-transform: uppercase;
+          color: #1D1C21;
+          margin: 0; }
       .awards .awards-items .item .text {
         font-family: "Raleway", sans-serif;
         font-style: normal;
@@ -905,7 +915,8 @@ button.mob-nav-toggle span {
           color: #1D1C21; }
           .location .location-content .contact-info .item .info a {
             color: #1D1C21;
-            text-decoration: none; }
+            text-decoration: none;
+            color: #1D1C21; }
         .location .location-content .contact-info .item ul li {
           display: inline-block; }
           .location .location-content .contact-info .item ul li:first-child {
@@ -999,7 +1010,8 @@ footer {
   button.mob-nav-toggle {
     display: block;
     padding: 0;
-    margin-left: 0; }
+    margin-left: 0;
+    z-index: 1; }
   .mob-nav {
     position: relative;
     z-index: 5; }
@@ -1018,11 +1030,12 @@ footer {
 @media only screen and (max-width: 786px) {
   .hero .emblem {
     margin-top: 0;
-    position: fixed;
+    position: absolute;
     top: 7px;
-    left: 10px; }
+    left: 10px;
+    z-index: 1; }
     .hero .emblem img {
-      width: 50%; } }
+      width: 50px; } }
 
 @media only screen and (max-width: 586px) {
   .hero {
@@ -1096,10 +1109,20 @@ footer {
         .awards .awards-items .item img {
           margin-right: 0;
           padding-bottom: 10px; }
-        .awards .awards-items .item .name {
+        .awards .awards-items .item .description .name {
           font-size: 18px;
           padding-bottom: 10px; }
-        .awards .awards-items .item .text {
+          .awards .awards-items .item .description .name h2 {
+            font-family: "Playfair Display SC Bold", sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 32px;
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
+            color: #1D1C21;
+            margin: 0; }
+        .awards .awards-items .item .description .text {
           padding-bottom: 10px; } }
 
 @media only screen and (max-width: 578px) {
