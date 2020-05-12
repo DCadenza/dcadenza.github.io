@@ -11,7 +11,8 @@
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1"
+    "gulp-autoprefixer": "^7.0.1",
+    "sass-autoprefixer": "^1.0.1"
   },
   "dependencies": {
     "gulp-imagemin": "^7.1.0",

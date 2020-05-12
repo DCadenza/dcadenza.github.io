@@ -53,7 +53,7 @@ $transitionDef: all 0.3s ease;
 
 // Default styles
 body {
-  background-color: $white;
+  background: $white;
   margin: 0;
   padding: 0;
   position: relative;
@@ -412,8 +412,8 @@ button.mob-nav-toggle span {
             line-height: 11px;
             letter-spacing: 0.01em;
             color: $fontRed;
-            width: 11.45px;
-            height: 11.45px;
+            width: 12px;
+            height: 12px;
           }
         }
       }
@@ -496,8 +496,8 @@ button.mob-nav-toggle span {
           line-height: 11px;
           letter-spacing: 0.01em;
           color: $fontRed;
-          width: 11.45px;
-          height: 11.45px;
+          width: 12px;
+          height: 12px;
         }
         &:hover {
           transition: $transitionDef;
@@ -557,8 +557,8 @@ button.mob-nav-toggle span {
         line-height: 11px;
         letter-spacing: 0.01em;
         color: $fontRed;
-        width: 11.45px;
-        height: 11.45px;
+        width: 12px;
+        height: 12px;
       }
     }
   }
@@ -706,8 +706,8 @@ button.mob-nav-toggle span {
       line-height: 11px;
       letter-spacing: 0.01em;
       color: $fontRed;
-      width: 11.45px;
-      height: 11.45px;
+      width: 12px;
+      height: 12px;
     }
   }
 }
@@ -787,8 +787,7 @@ button.mob-nav-toggle span {
       width: 100%;
       height: 30px;
       outline: none;
-      margin: 0;
-      margin-bottom: 20px;
+      margin: 0 0 20px;
       box-sizing: border-box;
       padding: 0 0 15px 14px;
       border: 0;
@@ -830,13 +829,12 @@ button.mob-nav-toggle span {
       cursor: pointer;
       display: block;
       height: 40px;
-      padding: 0px 0px 0px 14px;
       position: relative;
       border: 0;
       border-radius: 0;
       border-bottom: 1px solid $fontDefault;
       transition: $transitionDef;
-      padding-top: 6px;
+      padding: 6px 0 0 14px;
       font-family: $raleway;
       font-style: normal;
       font-weight: normal;
@@ -919,7 +917,6 @@ button.mob-nav-toggle span {
     }
     .custom-option.selection {
       background: $bcgcolor;
-      background: $bcgcolor;
       color: $white;
       font-family: $raleway;
       transition: $transitionDef;
@@ -937,8 +934,6 @@ button.mob-nav-toggle span {
       background-color: $bcgcolor;
       width: 100%;
       box-sizing: border-box;
-      margin: 0;
-      padding: 0 0 0 14px;
       border-bottom: 1px solid $fontDefault;
       border-top: 0;
       border-left: 0;
@@ -952,10 +947,10 @@ button.mob-nav-toggle span {
       letter-spacing: 0.01em;
       color: $fontDefault;
       outline: none;
-      margin-bottom: 20px;
+      margin: 0 0 20px;
       cursor: text;
       transition: $transitionDef;
-      padding-top: 6px;
+      padding: 6px 0 0 14px;
       &:hover {
         transition: $transitionDef;
         border-bottom-color: $fontRed;
@@ -1086,7 +1081,6 @@ button.mob-nav-toggle span {
          letter-spacing: 0.01em;
          color: $blackFont;
          a {
-           color: $blackFont;
            text-decoration: none;
            color: $blackFont;
          }
@@ -1165,7 +1159,6 @@ footer {
           }
         }
         &.submenu:hover > ul {
-          display: block;
           border: none!important;
           display: flex;
           flex-direction: row;
@@ -1260,7 +1253,6 @@ footer {
     background-repeat: no-repeat;
     height: 400px;
     width: 100%;
-    background-color: $bcgcolor;
     .container-content {
       display: flex;
       flex-direction: row;
@@ -1275,7 +1267,6 @@ footer {
         img {
           width: 70%;
         }
-
       }
       h2 {
         display: block;
@@ -1447,7 +1438,6 @@ footer {
       flex-wrap: wrap;
       .text-content {
         text-align: center;
-        padding-right: 0;
         padding-left: 10px;
         padding-right: 10px;
         max-width: 100%;
@@ -1456,8 +1446,7 @@ footer {
         }
       }
       .facade-img {
-        margin: 0 auto;
-        margin-top: 20px;
+        margin: 20px auto 0;
         top: 0;
       }
     }

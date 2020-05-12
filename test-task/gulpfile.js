@@ -22,9 +22,12 @@ var autoprefixer = require('gulp-autoprefixer');
 gulp.task('sass', function () {
     return gulp.src('app/sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: true
+        }))
         .pipe(gulp.dest('app/css'))
-        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7', 'ie 9', 'ie 10', 'ie 11',], { cascade: true }))
-        .pipe(browserSync.reload({stream: true}));
+        .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('browser-sync', function () {
